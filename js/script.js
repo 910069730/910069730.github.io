@@ -140,4 +140,12 @@ if (isMobileNavAnim || !$container.hasClass('mobile-nav-on')) return;
 
 $container.removeClass('mobile-nav-on');
 });
+
+//返回顶部
+$(".returnTop").click(function(){
+  // $(window).scrollTop(0)
+  $("html,body").animate({scrollTop:0});
+});
+
+
 });
