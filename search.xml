@@ -1,21 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>关于图片格式</title>
-    <url>/2020/08/16/aboutImages/</url>
-    <content><![CDATA[<p><img src="/2020/08/16/aboutImages/smile.png"></p>
-<h2 id="JPG、GIF、PNG和BMP有以下优缺点"><a href="#JPG、GIF、PNG和BMP有以下优缺点" class="headerlink" title="JPG、GIF、PNG和BMP有以下优缺点:"></a>JPG、GIF、PNG和BMP有以下优缺点:</h2><h3 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h3><p>JPG：JPEG图片格式的设计目标，是在不影响人类可分辨的图片质量的前提下，尽可能的压缩文件大小。这意味着JPEG去掉了一部分图片的原始信息，也即是进行了有损压缩。JPEG图片的优点，是采用了直接色，得益于更丰富的色彩，JPEG非常适合用来存储照片，用来表达更生动的图像效果，比如颜色渐变。</p>
-<p>GIF：GIF是无损的，采用GIF格式保存图片不会降低图片质量。但得益于数据的压缩，GIF格式的图片，其文件大小要远小于BMP格式的图片。文件小，是GIF格式的优点，同时，GIF格式还具有支持动画以及透明的优点。</p>
-<p>PNG：PNG是一种比较新的图片格式，PNG-8是非常好的GIF格式替代者，在可能的情况下，应该尽可能的使用PNG-8而不是GIF，因为在相同的图片效果下，PNG-8具有更小的文件体积。</p>
-<p>BMP：这是一种比较老的图片格式。BMP是无损的，但同时这种图片格式几乎没有对数据进行压缩，所以BMP格式的图片通常具有较大的文件大小。虽然同时支持索引色和直接色是一个优点。</p>
-<h3 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h3><p>JPG：与GIF相比，JPEG不适合用来存储企业Logo、线框类的图。因为有损压缩会导致图片模糊，而直接色的选用，又会导致图片文件较GIF更大。</p>
-<p>GIF：GIF格式仅支持8bit的索引色，即在整个图片中，只能存在256种不同的颜色。</p>
-<p>PNG：PNG-8本身也是支持动画的，只是浏览器支持得不好，不像GIF那样受到广泛的支持。</p>
-<p>BMP：太大的文件格式格式导致它几乎没有用武之地，现在除了在Windows操作系统中还比较常见之外，几乎看不到它。</p>
-<h2 id="总结如下"><a href="#总结如下" class="headerlink" title="总结如下:"></a>总结如下:</h2><p>想要画质好(存储空间大)的照片建议用PNG格式，想要存储空间小(画质低)的照片建议使用JPG格式，静态透明图像建议用PNG格式，由于PNG-8在浏览器中支持得不好，网页中想要使用动态图像或者动态透明图像推荐使用GIF格式图片，BMP几乎不用。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2020/08/15/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -31,6 +16,21 @@
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>关于图片格式</title>
+    <url>/2020/08/16/aboutImages/</url>
+    <content><![CDATA[<p><img src="/2020/08/16/aboutImages/smile.png"></p>
+<h2 id="JPG、GIF、PNG和BMP有以下优缺点"><a href="#JPG、GIF、PNG和BMP有以下优缺点" class="headerlink" title="JPG、GIF、PNG和BMP有以下优缺点:"></a>JPG、GIF、PNG和BMP有以下优缺点:</h2><h3 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h3><p>JPG：JPEG图片格式的设计目标，是在不影响人类可分辨的图片质量的前提下，尽可能的压缩文件大小。这意味着JPEG去掉了一部分图片的原始信息，也即是进行了有损压缩。JPEG图片的优点，是采用了直接色，得益于更丰富的色彩，JPEG非常适合用来存储照片，用来表达更生动的图像效果，比如颜色渐变。</p>
+<p>GIF：GIF是无损的，采用GIF格式保存图片不会降低图片质量。但得益于数据的压缩，GIF格式的图片，其文件大小要远小于BMP格式的图片。文件小，是GIF格式的优点，同时，GIF格式还具有支持动画以及透明的优点。</p>
+<p>PNG：PNG是一种比较新的图片格式，PNG-8是非常好的GIF格式替代者，在可能的情况下，应该尽可能的使用PNG-8而不是GIF，因为在相同的图片效果下，PNG-8具有更小的文件体积。</p>
+<p>BMP：这是一种比较老的图片格式。BMP是无损的，但同时这种图片格式几乎没有对数据进行压缩，所以BMP格式的图片通常具有较大的文件大小。虽然同时支持索引色和直接色是一个优点。</p>
+<h3 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h3><p>JPG：与GIF相比，JPEG不适合用来存储企业Logo、线框类的图。因为有损压缩会导致图片模糊，而直接色的选用，又会导致图片文件较GIF更大。</p>
+<p>GIF：GIF格式仅支持8bit的索引色，即在整个图片中，只能存在256种不同的颜色。</p>
+<p>PNG：PNG-8本身也是支持动画的，只是浏览器支持得不好，不像GIF那样受到广泛的支持。</p>
+<p>BMP：太大的文件格式格式导致它几乎没有用武之地，现在除了在Windows操作系统中还比较常见之外，几乎看不到它。</p>
+<h2 id="总结如下"><a href="#总结如下" class="headerlink" title="总结如下:"></a>总结如下:</h2><p>想要画质好(存储空间大)的照片建议用PNG格式，想要存储空间小(画质低)的照片建议使用JPG格式，静态透明图像建议用PNG格式，由于PNG-8在浏览器中支持得不好，网页中想要使用动态图像或者动态透明图像推荐使用GIF格式图片，BMP几乎不用。</p>
 ]]></content>
   </entry>
   <entry>
