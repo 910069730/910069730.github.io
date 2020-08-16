@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>搭建hexo方法</title>
+    <url>/2020/08/15/hexo/</url>
+    <content><![CDATA[<h2 id="步骤如下："><a href="#步骤如下：" class="headerlink" title="步骤如下："></a>步骤如下：</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">1、基于node</span><br><span class="line">2、npm包管理工具</span><br><span class="line">3、npm install -g hexo(hexo-cli)</span><br><span class="line">4、下载的资源是国外的可能比较慢</span><br><span class="line">5、淘宝镜像(代理的仓库)</span><br><span class="line">6、npm install -g hexo --registry=https://registry.npm.taobao.org</span><br><span class="line">7、在一个空目录（hexo init）博客系统的初始化</span><br><span class="line">8、hexo\source\_posts md文档就是博客文档</span><br><span class="line">9、如果要写一篇博客（新建文件   xxx.md）</span><br><span class="line">10、把md文档转html文件（hexo g）</span><br><span class="line">11、把自己的服务器预览（hexo s） localhost:4000</span><br><span class="line">12、如果从新生成html文件可能会有缓存（hexo clean,hexo g）</span><br></pre></td></tr></table></figure>
+
+<h2 id="简化分析："><a href="#简化分析：" class="headerlink" title="简化分析："></a>简化分析：</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">1、首先要先安装好Node,然后同时也要有npm包管理工具</span><br><span class="line">2、然后在自己本地目录下创建一个hexo文件夹</span><br><span class="line">3、以管理员方式打开cmd然后切换到hexo文件夹所在目录下</span><br><span class="line">4、输入命令行：npm install hexo -g --registry=https://registry.npm.taobao.org</span><br><span class="line">5、然后输入命令行：hexo init</span><br><span class="line">6、再输入命令行：hexo g</span><br><span class="line">7、最后输入命令行：hexo s</span><br><span class="line">8、打开浏览器访问  localhost:4000  即可</span><br></pre></td></tr></table></figure>
+
+
+
+]]></content>
+  </entry>
+  <entry>
     <title>关于图片格式</title>
     <url>/2020/08/16/aboutImages/</url>
     <content><![CDATA[<p><img src="/2020/08/16/aboutImages/smile.png"></p>
@@ -31,17 +42,6 @@
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>搭建hexo方法</title>
-    <url>/2020/08/15/hexo/</url>
-    <content><![CDATA[<h2 id="步骤如下："><a href="#步骤如下：" class="headerlink" title="步骤如下："></a>步骤如下：</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">1、基于node</span><br><span class="line">2、npm包管理工具</span><br><span class="line">3、npm install -g hexo(hexo-cli)</span><br><span class="line">4、下载的资源是国外的可能比较慢</span><br><span class="line">5、淘宝镜像(代理的仓库)</span><br><span class="line">6、npm install -g hexo --registry=https://registry.npm.taobao.org</span><br><span class="line">7、在一个空目录（hexo init）博客系统的初始化</span><br><span class="line">8、hexo\source\_posts md文档就是博客文档</span><br><span class="line">9、如果要写一篇博客（新建文件   xxx.md）</span><br><span class="line">10、把md文档转html文件（hexo g）</span><br><span class="line">11、把自己的服务器预览（hexo s） localhost:4000</span><br><span class="line">12、如果从新生成html文件可能会有缓存（hexo clean,hexo g）</span><br></pre></td></tr></table></figure>
-
-<h2 id="简化分析："><a href="#简化分析：" class="headerlink" title="简化分析："></a>简化分析：</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">1、首先要先安装好Node,然后同时也要有npm包管理工具</span><br><span class="line">2、然后在自己本地目录下创建一个hexo文件夹</span><br><span class="line">3、以管理员方式打开cmd然后切换到hexo文件夹所在目录下</span><br><span class="line">4、输入命令行：npm install hexo -g --registry=https://registry.npm.taobao.org</span><br><span class="line">5、然后输入命令行：hexo init</span><br><span class="line">6、再输入命令行：hexo g</span><br><span class="line">7、最后输入命令行：hexo s</span><br><span class="line">8、打开浏览器访问  localhost:4000  即可</span><br></pre></td></tr></table></figure>
-
-
-
 ]]></content>
   </entry>
 </search>
