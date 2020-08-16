@@ -178,6 +178,8 @@ body {
 }
 .mobile-nav-on #wrap {
   left: 280px;
+  left: 30%;
+  width: 70%;
 }
 @media screen and (min-width: 768px) {
   #main {
