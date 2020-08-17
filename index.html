@@ -166,6 +166,51 @@
       <div class="outer" style="background:#eee;box-shadow: 0 0 10px 10px #000 inset;">
         <section id="main">
   
+    <article id="post-returnTop" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/08/17/returnTop/" class="article-date">
+  <time datetime="2020-08-17T11:31:04.209Z" itemprop="datePublished">2020-08-17</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/jquery/">jquery</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/08/17/returnTop/">jquery实现返回顶部功能</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="功能代码如下："><a href="#功能代码如下：" class="headerlink" title="功能代码如下："></a>功能代码如下：</h2><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</span><br><span class="line">    &lt;title&gt;&lt;/title&gt;</span><br><span class="line">    &lt;script src=&#x27;jquery-1.12.4.js&#x27;&gt;&lt;/script&gt;</span><br><span class="line">    &lt;style&gt;</span><br><span class="line">        body&#123;</span><br><span class="line">            min-height: 1000px;</span><br><span class="line">            background: skyblue;</span><br><span class="line">        &#125;</span><br><span class="line">        #dv&#123;</span><br><span class="line">            width: 40px;</span><br><span class="line">            height: 40px;</span><br><span class="line">            background-color: springgreen;</span><br><span class="line">            position: fixed;</span><br><span class="line">            right: 10px;</span><br><span class="line">            bottom: 10px;</span><br><span class="line">            cursor: pointer;</span><br><span class="line">        &#125;</span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div id=&quot;dv&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">  $(function()&#123;</span><br><span class="line">    $(&quot;#dv&quot;).click(function()&#123;</span><br><span class="line">        $(&quot;html,body&quot;).animate(&#123;scrollTop:0&#125;);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;);</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="简要分析："><a href="#简要分析：" class="headerlink" title="简要分析："></a>简要分析：</h2><p>首先要引入一个jQuery的js库，然后写入一个div并给予样式使其固定在了页面右下角，然后通过点击事件触发让页面返回顶部，当前通过动画函数的方式控制html和body,使其scrollTop为0即可。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://910069730.github.io/2020/08/17/returnTop/" data-id="ckdyggnpq0005qouyb5ypcs4b" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jquery%E5%AE%9E%E7%8E%B0%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8/" rel="tag">jquery实现返回顶部</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-aboutImages" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/08/16/aboutImages/" class="article-date">
@@ -206,7 +251,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://910069730.github.io/2020/08/16/aboutImages/" data-id="ckdyfllip0000x8uy00rkawxu" class="article-share-link">Share</a>
+      <a data-url="https://910069730.github.io/2020/08/16/aboutImages/" data-id="ckdyggnpb0000qouyhh4gc9ze" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/image%E6%A0%BC%E5%BC%8F/" rel="tag">image格式</a></li></ul>
@@ -254,7 +299,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://910069730.github.io/2020/08/15/hexo/" data-id="ckdyfllj30006x8uy9e2edtf5" class="article-share-link">Share</a>
+      <a data-url="https://910069730.github.io/2020/08/15/hexo/" data-id="ckdyggnpp0004qouyau4zb7e2" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo%E6%90%AD%E5%BB%BA/" rel="tag">hexo搭建</a></li></ul>
@@ -309,7 +354,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://910069730.github.io/2020/08/15/hello-world/" data-id="ckdyfllj30005x8uyevif0f0k" class="article-share-link">Share</a>
+      <a data-url="https://910069730.github.io/2020/08/15/hello-world/" data-id="ckdyggnpm0001qouy294aaa4e" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li></ul>
@@ -337,7 +382,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">📕Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/basic-knowledge/">basic knowledge</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/basic-knowledge/">basic knowledge</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/jquery/">jquery</a></li></ul>
     </div>
   </div>
 
@@ -347,7 +392,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">🔖Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo%E6%90%AD%E5%BB%BA/" rel="tag">hexo搭建</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/image%E6%A0%BC%E5%BC%8F/" rel="tag">image格式</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo%E6%90%AD%E5%BB%BA/" rel="tag">hexo搭建</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/image%E6%A0%BC%E5%BC%8F/" rel="tag">image格式</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jquery%E5%AE%9E%E7%8E%B0%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8/" rel="tag">jquery实现返回顶部</a></li></ul>
     </div>
   </div>
 
@@ -357,7 +402,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">🎈Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/hexo%E6%90%AD%E5%BB%BA/" style="font-size: 10px;">hexo搭建</a> <a href="/tags/image%E6%A0%BC%E5%BC%8F/" style="font-size: 10px;">image格式</a>
+      <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/hexo%E6%90%AD%E5%BB%BA/" style="font-size: 10px;">hexo搭建</a> <a href="/tags/image%E6%A0%BC%E5%BC%8F/" style="font-size: 10px;">image格式</a> <a href="/tags/jquery%E5%AE%9E%E7%8E%B0%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8/" style="font-size: 10px;">jquery实现返回顶部</a>
     </div>
   </div>
 
@@ -377,6 +422,10 @@
     <h3 class="widget-title">📃Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2020/08/17/returnTop/">jquery实现返回顶部功能</a>
+          </li>
         
           <li>
             <a href="/2020/08/16/aboutImages/">关于图片格式</a>
