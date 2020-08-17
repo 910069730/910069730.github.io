@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>搭建hexo方法</title>
-    <url>/2020/08/15/hexo/</url>
-    <content><![CDATA[<h2 id="步骤如下："><a href="#步骤如下：" class="headerlink" title="步骤如下："></a>步骤如下：</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">1、基于node</span><br><span class="line">2、npm包管理工具</span><br><span class="line">3、npm install -g hexo(hexo-cli)</span><br><span class="line">4、下载的资源是国外的可能比较慢</span><br><span class="line">5、淘宝镜像(代理的仓库)</span><br><span class="line">6、npm install -g hexo --registry=https://registry.npm.taobao.org</span><br><span class="line">7、在一个空目录（hexo init）博客系统的初始化</span><br><span class="line">8、hexo\source\_posts md文档就是博客文档</span><br><span class="line">9、如果要写一篇博客（新建文件   xxx.md）</span><br><span class="line">10、把md文档转html文件（hexo g）</span><br><span class="line">11、把自己的服务器预览（hexo s） localhost:4000</span><br><span class="line">12、如果从新生成html文件可能会有缓存（hexo clean,hexo g）</span><br></pre></td></tr></table></figure>
-
-<h2 id="简化分析："><a href="#简化分析：" class="headerlink" title="简化分析："></a>简化分析：</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">1、首先要先安装好Node,然后同时也要有npm包管理工具</span><br><span class="line">2、然后在自己本地目录下创建一个hexo文件夹</span><br><span class="line">3、以管理员方式打开cmd然后切换到hexo文件夹所在目录下</span><br><span class="line">4、输入命令行：npm install hexo -g --registry=https://registry.npm.taobao.org</span><br><span class="line">5、然后输入命令行：hexo init</span><br><span class="line">6、再输入命令行：hexo g</span><br><span class="line">7、最后输入命令行：hexo s</span><br><span class="line">8、打开浏览器访问  localhost:4000  即可</span><br></pre></td></tr></table></figure>
-
-
-
+    <title>关于图片格式</title>
+    <url>/2020/08/16/aboutImages/</url>
+    <content><![CDATA[<p><img src="/2020/08/16/aboutImages/smile.png"></p>
+<h2 id="JPG、GIF、PNG和BMP有以下优缺点"><a href="#JPG、GIF、PNG和BMP有以下优缺点" class="headerlink" title="JPG、GIF、PNG和BMP有以下优缺点:"></a>JPG、GIF、PNG和BMP有以下优缺点:</h2><h3 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h3><p>JPG：JPEG图片格式的设计目标，是在不影响人类可分辨的图片质量的前提下，尽可能的压缩文件大小。这意味着JPEG去掉了一部分图片的原始信息，也即是进行了有损压缩。JPEG图片的优点，是采用了直接色，得益于更丰富的色彩，JPEG非常适合用来存储照片，用来表达更生动的图像效果，比如颜色渐变。</p>
+<p>GIF：GIF是无损的，采用GIF格式保存图片不会降低图片质量。但得益于数据的压缩，GIF格式的图片，其文件大小要远小于BMP格式的图片。文件小，是GIF格式的优点，同时，GIF格式还具有支持动画以及透明的优点。</p>
+<p>PNG：PNG是一种比较新的图片格式，PNG-8是非常好的GIF格式替代者，在可能的情况下，应该尽可能的使用PNG-8而不是GIF，因为在相同的图片效果下，PNG-8具有更小的文件体积。</p>
+<p>BMP：这是一种比较老的图片格式。BMP是无损的，但同时这种图片格式几乎没有对数据进行压缩，所以BMP格式的图片通常具有较大的文件大小。虽然同时支持索引色和直接色是一个优点。</p>
+<h3 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h3><p>JPG：与GIF相比，JPEG不适合用来存储企业Logo、线框类的图。因为有损压缩会导致图片模糊，而直接色的选用，又会导致图片文件较GIF更大。</p>
+<p>GIF：GIF格式仅支持8bit的索引色，即在整个图片中，只能存在256种不同的颜色。</p>
+<p>PNG：PNG-8本身也是支持动画的，只是浏览器支持得不好，不像GIF那样受到广泛的支持。</p>
+<p>BMP：太大的文件格式格式导致它几乎没有用武之地，现在除了在Windows操作系统中还比较常见之外，几乎看不到它。</p>
+<h2 id="总结如下"><a href="#总结如下" class="headerlink" title="总结如下:"></a>总结如下:</h2><p>想要画质好(存储空间大)的照片建议用PNG格式，想要存储空间小(画质低)的照片建议使用JPG格式，静态透明图像建议用PNG格式，由于PNG-8在浏览器中支持得不好，网页中想要使用动态图像或者动态透明图像推荐使用GIF格式图片，BMP几乎不用。</p>
 ]]></content>
   </entry>
   <entry>
@@ -30,18 +34,14 @@
 ]]></content>
   </entry>
   <entry>
-    <title>关于图片格式</title>
-    <url>/2020/08/16/aboutImages/</url>
-    <content><![CDATA[<p><img src="/2020/08/16/aboutImages/smile.png"></p>
-<h2 id="JPG、GIF、PNG和BMP有以下优缺点"><a href="#JPG、GIF、PNG和BMP有以下优缺点" class="headerlink" title="JPG、GIF、PNG和BMP有以下优缺点:"></a>JPG、GIF、PNG和BMP有以下优缺点:</h2><h3 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h3><p>JPG：JPEG图片格式的设计目标，是在不影响人类可分辨的图片质量的前提下，尽可能的压缩文件大小。这意味着JPEG去掉了一部分图片的原始信息，也即是进行了有损压缩。JPEG图片的优点，是采用了直接色，得益于更丰富的色彩，JPEG非常适合用来存储照片，用来表达更生动的图像效果，比如颜色渐变。</p>
-<p>GIF：GIF是无损的，采用GIF格式保存图片不会降低图片质量。但得益于数据的压缩，GIF格式的图片，其文件大小要远小于BMP格式的图片。文件小，是GIF格式的优点，同时，GIF格式还具有支持动画以及透明的优点。</p>
-<p>PNG：PNG是一种比较新的图片格式，PNG-8是非常好的GIF格式替代者，在可能的情况下，应该尽可能的使用PNG-8而不是GIF，因为在相同的图片效果下，PNG-8具有更小的文件体积。</p>
-<p>BMP：这是一种比较老的图片格式。BMP是无损的，但同时这种图片格式几乎没有对数据进行压缩，所以BMP格式的图片通常具有较大的文件大小。虽然同时支持索引色和直接色是一个优点。</p>
-<h3 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h3><p>JPG：与GIF相比，JPEG不适合用来存储企业Logo、线框类的图。因为有损压缩会导致图片模糊，而直接色的选用，又会导致图片文件较GIF更大。</p>
-<p>GIF：GIF格式仅支持8bit的索引色，即在整个图片中，只能存在256种不同的颜色。</p>
-<p>PNG：PNG-8本身也是支持动画的，只是浏览器支持得不好，不像GIF那样受到广泛的支持。</p>
-<p>BMP：太大的文件格式格式导致它几乎没有用武之地，现在除了在Windows操作系统中还比较常见之外，几乎看不到它。</p>
-<h2 id="总结如下"><a href="#总结如下" class="headerlink" title="总结如下:"></a>总结如下:</h2><p>想要画质好(存储空间大)的照片建议用PNG格式，想要存储空间小(画质低)的照片建议使用JPG格式，静态透明图像建议用PNG格式，由于PNG-8在浏览器中支持得不好，网页中想要使用动态图像或者动态透明图像推荐使用GIF格式图片，BMP几乎不用。</p>
+    <title>搭建hexo方法</title>
+    <url>/2020/08/15/hexo/</url>
+    <content><![CDATA[<h2 id="步骤如下："><a href="#步骤如下：" class="headerlink" title="步骤如下："></a>步骤如下：</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">1、基于node</span><br><span class="line">2、npm包管理工具</span><br><span class="line">3、npm install -g hexo(hexo-cli)</span><br><span class="line">4、下载的资源是国外的可能比较慢</span><br><span class="line">5、淘宝镜像(代理的仓库)</span><br><span class="line">6、npm install -g hexo --registry=https://registry.npm.taobao.org</span><br><span class="line">7、在一个空目录（hexo init）博客系统的初始化</span><br><span class="line">8、hexo\source\_posts md文档就是博客文档</span><br><span class="line">9、如果要写一篇博客（新建文件   xxx.md）</span><br><span class="line">10、把md文档转html文件（hexo g）</span><br><span class="line">11、把自己的服务器预览（hexo s） localhost:4000</span><br><span class="line">12、如果从新生成html文件可能会有缓存（hexo clean,hexo g）</span><br></pre></td></tr></table></figure>
+
+<h2 id="简化分析："><a href="#简化分析：" class="headerlink" title="简化分析："></a>简化分析：</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">1、首先要先安装好Node,然后同时也要有npm包管理工具</span><br><span class="line">2、然后在自己本地目录下创建一个hexo文件夹</span><br><span class="line">3、以管理员方式打开cmd然后切换到hexo文件夹所在目录下</span><br><span class="line">4、输入命令行：npm install hexo -g --registry=https://registry.npm.taobao.org</span><br><span class="line">5、然后输入命令行：hexo init</span><br><span class="line">6、再输入命令行：hexo g</span><br><span class="line">7、最后输入命令行：hexo s</span><br><span class="line">8、打开浏览器访问  localhost:4000  即可</span><br></pre></td></tr></table></figure>
+
+
+
 ]]></content>
   </entry>
 </search>
