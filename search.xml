@@ -14,6 +14,12 @@
 <p>BMP：太大的文件格式格式导致它几乎没有用武之地，现在除了在Windows操作系统中还比较常见之外，几乎看不到它。</p>
 <h2 id="总结如下"><a href="#总结如下" class="headerlink" title="总结如下:"></a>总结如下:</h2><p>想要画质好(存储空间大)的照片建议用PNG格式，想要存储空间小(画质低)的照片建议使用JPG格式，静态透明图像建议用PNG格式，由于PNG-8在浏览器中支持得不好，网页中想要使用动态图像或者动态透明图像推荐使用GIF格式图片，BMP几乎不用。</p>
 ]]></content>
+      <categories>
+        <category>basic knowledge</category>
+      </categories>
+      <tags>
+        <tag>image格式</tag>
+      </tags>
   </entry>
   <entry>
     <title>Hello World</title>
@@ -32,6 +38,12 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
   </entry>
   <entry>
     <title>搭建hexo方法</title>
@@ -43,5 +55,11 @@
 
 
 ]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo搭建</tag>
+      </tags>
   </entry>
 </search>
