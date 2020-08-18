@@ -148,5 +148,12 @@ $(".returnTop").click(function(){
   $(this).css({ borderColor:"#999",color:"#999"});
 });
 
+//分类页事件监听
+$('.article-entry .category-list-item').on('mouseover',function(){
+   $(this).find('category-list-link').css({color:"#258fb8"});
+   $(this).css({backgroundColor: "rgb(237,237,237)"});
+}).on('click',function(){
+   location.href=$(this).find('category-list-link').attr('href');
+});
 
 });

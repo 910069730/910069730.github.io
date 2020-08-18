@@ -950,7 +950,6 @@ a.article-title:hover {
 }
 .category-all-page a:hover {
   font-size: 14px;
-  color: #258fb8;
   text-decoration: none;
   font-weight: bold;
 }
@@ -975,10 +974,12 @@ a.article-title:hover {
   padding: 8px;
   width: 150px;
   position: relative;
+  background-color: #ededed;
   background-color: rgba(237,237,237,0.53);
   border-radius: 1px;
   -webkit-box-shadow: 0px 0px 0px 1px #ccc;
   box-shadow: 0px 0px 0px 1px #ccc;
+  cursor: pointer;
 }
 .category-all-page .category-list-link {
   color: #333;
