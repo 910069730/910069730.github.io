@@ -950,12 +950,14 @@ a.article-title:hover {
 }
 .category-all-page a:hover {
   font-size: 14px;
-  color: #d8d;
+  color: #258fb8;
   text-decoration: none;
   font-weight: bold;
 }
 .category-all-page .category-all-title {
   text-align: left;
+  margin-top: 20px;
+  font-weight: 700;
 }
 .category-all-page .category-all {
   margin-top: 20px;
@@ -964,6 +966,7 @@ a.article-title:hover {
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-bottom: 20px;
 }
 .category-all-page .category-list-item {
   text-align: center;
@@ -979,6 +982,7 @@ a.article-title:hover {
 }
 .category-all-page .category-list-link {
   color: #333;
+  font-weight: 700;
 }
 .category-all-page .category-list-count {
   color: #333;
