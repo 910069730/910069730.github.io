@@ -144,8 +144,10 @@ $container.removeClass('mobile-nav-on');
 //返回顶部
 $(".returnTop").click(function(){
   // $(window).scrollTop(0)
-  $("html,body").animate({scrollTop:0});
-  $(this).css({ boxShadow: "0 0 5px 5px #999", color:"#999",textShadow: "none"});
+  $("html,body").animate({scrollTop:0},2000,function(){
+    $(this).css({ boxShadow: "0 0 5px 5px #999", color:"#999",textShadow: "none"});
+  });
+ 
 });
 
 //分类页事件监听
