@@ -144,7 +144,7 @@ $container.removeClass('mobile-nav-on');
 //返回顶部
 $(".returnTop").click(function(){
   // $(window).scrollTop(0)
-  $("html,body").animate({scrollTop:0},2000,function(){
+  $("html,body").animate({scrollTop:0},1000,function(){
     $(this).css({ boxShadow: "0 0 5px 5px #999", color:"#999",textShadow: "none"});
   });
  
