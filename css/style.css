@@ -972,23 +972,23 @@ a.article-title:hover {
   margin-bottom: 20px;
 }
 .category-all-page .category-list-item {
-  text-align: left;
+  text-align: center;
   display: inline-block;
   margin: 8px;
   padding: 8px;
   width: 150px;
   position: relative;
-  overflow: hidden;
-  text-overflow: ellipsis;
   background-color: #ededed;
   background-color: rgba(237,237,237,0.53);
   border-radius: 1px;
   -webkit-box-shadow: 0px 0px 0px 1px #ccc;
   box-shadow: 0px 0px 0px 1px #ccc;
   cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.category-all-page .category-list-item:first-line {
-  text-align: center !important;
+.category-all-page .category-list-item:hover {
+  background-color: #ededed;
 }
 .category-all-page .category-list-link {
   color: #333;
@@ -1032,7 +1032,7 @@ a.article-title:hover {
   margin-bottom: 20px;
 }
 .tag-cloud .tag-cloud-tags a {
-  text-align: left;
+  text-align: center;
   display: inline-block;
   margin: 8px;
   padding: 8px;
@@ -1049,24 +1049,8 @@ a.article-title:hover {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.tag-cloud .tag-cloud-tags a:first-line {
-  text-align: center !important;
-  text-align: left;
-  display: inline-block;
-  margin: 8px;
-  padding: 8px;
-  width: 150px;
-  position: relative;
-  color: #333;
-  font-weight: 700;
+.tag-cloud .tag-cloud-tags a:hover {
   background-color: #ededed;
-  background-color: rgba(237,237,237,0.53);
-  border-radius: 1px;
-  -webkit-box-shadow: 0px 0px 0px 1px #ccc;
-  box-shadow: 0px 0px 0px 1px #ccc;
-  cursor: pointer;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 #comments {
   background: #fff;
