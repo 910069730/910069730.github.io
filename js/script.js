@@ -152,8 +152,11 @@ $(".returnTop").click(function(){
 $('.article-entry .category-list-item').on('mouseover',function(){
    $(this).find('category-list-link').css({color:"#258fb8"});
    $(this).css({backgroundColor: "rgb(237,237,237)"});
+}).on('mouseout',function(){
+  $(this).find('category-list-link').css({color:"#333"});
+  $(this).css({backgroundColor: "rgba(237,237,237,0.53)"});
 }).on('click',function(){
-   location.href=$(this).find('category-list-link').attr('href');
+   location.href="https://910069730.github.io"+$(this).find('category-list-link').attr('href');
 });
 
 });
