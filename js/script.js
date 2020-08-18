@@ -145,7 +145,7 @@ $container.removeClass('mobile-nav-on');
 $(".returnTop").click(function(){
   // $(window).scrollTop(0)
   $("html,body").animate({scrollTop:0});
-  $(this).css({ borderColor:"#999",color:"#999"});
+  $(this).css({ boxShadow: "0 0 5px 5px #999", color:"#999",textShadow: "none"});
 });
 
 //分类页事件监听
