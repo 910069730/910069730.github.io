@@ -987,24 +987,11 @@ a.article-title:hover {
   box-shadow: 0px 0px 0px 1px #ccc;
   cursor: pointer;
 }
-.category-all-page .category-list-item:first-line {
-  text-align: center !important;
-  display: inline-block;
-  margin: 8px;
-  padding: 8px;
-  width: 150px;
-  position: relative;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  background-color: #ededed;
-  background-color: rgba(237,237,237,0.53);
-  border-radius: 1px;
-  -webkit-box-shadow: 0px 0px 0px 1px #ccc;
-  box-shadow: 0px 0px 0px 1px #ccc;
-  cursor: pointer;
-}
 .category-all-page .category-list-item:hover {
   background-color: #ededed;
+}
+.category-all-page .category-list-item:first-line {
+  text-align: center !important;
 }
 .category-all-page .category-list-link {
   color: #333;
@@ -1065,26 +1052,11 @@ a.article-title:hover {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.tag-cloud .tag-cloud-tags a:first-line {
-  text-align: center !important;
-  display: inline-block;
-  margin: 8px;
-  padding: 8px;
-  width: 150px;
-  position: relative;
-  color: #333;
-  font-weight: 700;
-  background-color: #ededed;
-  background-color: rgba(237,237,237,0.53);
-  border-radius: 1px;
-  -webkit-box-shadow: 0px 0px 0px 1px #ccc;
-  box-shadow: 0px 0px 0px 1px #ccc;
-  cursor: pointer;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
 .tag-cloud .tag-cloud-tags a:hover {
   background-color: #ededed;
+}
+.tag-cloud .tag-cloud-tags a:first-line {
+  text-align: center !important;
 }
 #comments {
   background: #fff;
