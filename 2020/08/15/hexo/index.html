@@ -140,30 +140,34 @@
   background:rgba(0,0,0,0);
   font-family: "华文细黑";
  }
+ #header{
+   overflow: hidden;
+ }
  #logo{
    position: relative;
  }
-  #logo::after {
+ #logo::after {
     content: '🌠';
     font-size: 7rem;
     text-shadow: 0 0 30px #fff;
     position: absolute;
-    right: -250%;
-    top: -450%;
+    right: -400%;
+    top: -500%;
     opacity: 0.9;
     color: transparent;
     /* box-shadow: 0 0 10px 10px rgba(255,255,255,.1); */
     z-index: -1;
-    animation: star 2s  ease-in infinite alternate;
+    animation: star 2s  ease-in infinite ;
 }
 @keyframes star {
   0%{
-    right: -250%;
-    top: -450%;
+    right: -400%;
+    top: -500%;
   }
   100%{
-    right: -80%;
-    top: -80%;
+    right: 100%;
+    top: 400%;
+    opacity: 0;
   }
 }
  @media screen and (max-width:768px){
@@ -267,7 +271,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://910069730.github.io/2020/08/15/hexo/" data-id="ckdzz30o20006fkuyankq6n08" class="article-share-link">Share</a>
+      <a data-url="https://910069730.github.io/2020/08/15/hexo/" data-id="ckdzzqwq9000c7suyc97pgacn" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo%E6%90%AD%E5%BB%BA/" rel="tag">hexo搭建</a></li></ul>
