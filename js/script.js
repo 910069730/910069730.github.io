@@ -150,8 +150,7 @@ $(".returnTop").click(function(){
 
 //分类页事件监听
 $('.article-entry .category-list-item').on('click',function(){
-  //  location.href="https://910069730.github.io"+
-  console.log($(this).find('a').attr('href'));
+  location.href="https://910069730.github.io"+$(this).find('a').attr('href');
 });
 
 });
