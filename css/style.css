@@ -1003,6 +1003,47 @@ a.article-title:hover {
   padding-left: 10px;
   color: #333;
 }
+.tag-cloud a:link {
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+}
+.tag-cloud a:hover {
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.tag-cloud .tag-cloud-title {
+  text-align: left;
+  margin-top: 20px;
+  font-weight: 700;
+}
+.tag-cloud .tag-cloud-tags {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  list-style: none;
+  margin-bottom: 20px;
+}
+.tag-cloud .tag-cloud-tags a {
+  text-align: center;
+  display: inline-block;
+  margin: 8px;
+  padding: 8px;
+  width: 150px;
+  position: relative;
+  color: #333;
+  font-weight: 700;
+  background-color: #ededed;
+  background-color: rgba(237,237,237,0.53);
+  border-radius: 1px;
+  -webkit-box-shadow: 0px 0px 0px 1px #ccc;
+  box-shadow: 0px 0px 0px 1px #ccc;
+  cursor: pointer;
+}
+.tag-cloud .tag-cloud-tags a:hover {
+  background-color: #ededed;
+}
 #comments {
   background: #fff;
   -webkit-box-shadow: 1px 2px 3px #ddd;
