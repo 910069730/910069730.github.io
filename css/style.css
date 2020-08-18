@@ -178,6 +178,7 @@ body {
   transition: 0.2s ease-out;
   z-index: 1;
   background: #eee;
+  background: #000 url("images/stars.gif") repeat;
 }
 .mobile-nav-on #wrap {
   left: 280px;
