@@ -981,6 +981,9 @@ a.article-title:hover {
   box-shadow: 0px 0px 0px 1px #ccc;
   cursor: pointer;
 }
+.category-all-page .category-list-item:hover {
+  background-color: #ededed;
+}
 .category-all-page .category-list-link {
   color: #333;
   font-weight: 700;
