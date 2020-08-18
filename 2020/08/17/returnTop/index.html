@@ -140,6 +140,32 @@
   background:rgba(0,0,0,0);
   font-family: "华文细黑";
  }
+ #logo{
+   position: relative;
+ }
+  #logo::after {
+    content: '🌠';
+    font-size: 7rem;
+    text-shadow: 0 0 30px #fff;
+    position: absolute;
+    right: -250%;
+    top: -450%;
+    opacity: 0.9;
+    color: transparent;
+    /* box-shadow: 0 0 10px 10px rgba(255,255,255,.1); */
+    z-index: -1;
+    animation: star 2s  ease-in infinite alternate;
+}
+@keyframes star {
+  0%{
+    right: -250%;
+    top: -450%;
+  }
+  100%{
+    right: -80%;
+    top: -80%;
+  }
+}
  @media screen and (max-width:768px){
 
   .article-entry .tag-cloud-tags a{
@@ -238,7 +264,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://910069730.github.io/2020/08/17/returnTop/" data-id="ckdzxpeap000dvguy8xjm14ew" class="article-share-link">Share</a>
+      <a data-url="https://910069730.github.io/2020/08/17/returnTop/" data-id="ckdzz30o30007fkuy3xe5bctm" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jquery%E5%AE%9E%E7%8E%B0%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8/" rel="tag">jquery实现返回顶部</a></li></ul>
@@ -264,7 +290,7 @@
         
           <aside id="sidebar">
   <div class="widget-wrap" style="padding: 10px;border: 5px solid #ddd;border-radius: 3px;border-radius: 3px;box-shadow: 0 -1px 4px #ccc inset;">
-    <div style="font-size: 7rem;text-align: center;">
+    <div style="font-size: 6rem;text-align: center;">
       <!-- <img src="https://910069730.github.io/favicon.png" alt="" class="avatar"  style="width: 60%;padding: 0 20%;margin-bottom: 15px;border-radius: 26%;"> -->
       👨‍💻
     </div>
