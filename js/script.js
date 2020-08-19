@@ -155,4 +155,11 @@ $('.article-entry .category-list-item').on('click',function(){
   location.href="https://910069730.github.io"+$(this).find('a').attr('href');
 });
 
+//页面整体生成
+ $('#get_all').on('click',function(){
+   $('.get_all').css({display:"none"});
+   $('.outer').fadeIn();
+   $('#footer').fadeIn();
+ });
+
 });

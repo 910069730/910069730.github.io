@@ -204,8 +204,50 @@
  html,body{
   box-shadow:none !important;
  }
+ .outer{
+   display: none;
+ }
+ #footer{
+   display: none;
+ }
+ .get_all{
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+    color: rgba(255,255,255,0.3);
+    left: 0;
+    top: 272px;
+    z-index: 999;
+    animation: downv 2s  linear infinite alternate;
+}
+#get_all{
+    cursor: pointer;
+    display: inline;
+    text-shadow: 0 0 10px #eee;
+    opacity: .5;
+    transition: 0.5s;
+}
+@keyframes downv {
+  0%{
+    left: 0;
+    top: 272px;
+    opacity: .5;
+  }
+  100%{
+    left: 0;
+    top: 277px;
+    opacity: .8;
+  }
+}
+#get_all:hover{
+  opacity: 1;
+}
 </style>
 <body>
+  <div class="get_all">
+    <div id="get_all">⮟</div>
+  </div>
   <div id="container">
     <div id="wrap" >
       <header id="header" style="border-bottom:none;box-shadow: 0 0 100px 55px #000;">
@@ -243,7 +285,7 @@
     </div>
   </div>
 </header>
-      <div class="outer" style="background:#eee;box-shadow: 0 0 10px 10px #000 inset;">
+      <div class="outer" style="background:#eee;box-shadow: 0 0 10px 10px #000 inset;position: relative;">
         <section id="main"><article id="post-returnTop" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/08/17/returnTop/" class="article-date">
@@ -278,7 +320,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://910069730.github.io/2020/08/17/returnTop/" data-id="cke1d1qid0008z8uy0repg3pd" class="article-share-link">Share</a>
+      <a data-url="https://910069730.github.io/2020/08/17/returnTop/" data-id="cke1fdidk000g9wuygawe6653" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jquery%E5%AE%9E%E7%8E%B0%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8/" rel="tag">jquery实现返回顶部</a></li></ul>

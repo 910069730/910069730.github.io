@@ -204,8 +204,50 @@
  html,body{
   box-shadow:none !important;
  }
+ .outer{
+   display: none;
+ }
+ #footer{
+   display: none;
+ }
+ .get_all{
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+    color: rgba(255,255,255,0.3);
+    left: 0;
+    top: 272px;
+    z-index: 999;
+    animation: downv 2s  linear infinite alternate;
+}
+#get_all{
+    cursor: pointer;
+    display: inline;
+    text-shadow: 0 0 10px #eee;
+    opacity: .5;
+    transition: 0.5s;
+}
+@keyframes downv {
+  0%{
+    left: 0;
+    top: 272px;
+    opacity: .5;
+  }
+  100%{
+    left: 0;
+    top: 277px;
+    opacity: .8;
+  }
+}
+#get_all:hover{
+  opacity: 1;
+}
 </style>
 <body>
+  <div class="get_all">
+    <div id="get_all">⮟</div>
+  </div>
   <div id="container">
     <div id="wrap" >
       <header id="header" style="border-bottom:none;box-shadow: 0 0 100px 55px #000;">
@@ -243,7 +285,7 @@
     </div>
   </div>
 </header>
-      <div class="outer" style="background:#eee;box-shadow: 0 0 10px 10px #000 inset;">
+      <div class="outer" style="background:#eee;box-shadow: 0 0 10px 10px #000 inset;position: relative;">
         <section id="main"><article id="categories-" class="article article-type-categories" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/categories/index.html" class="article-date">
@@ -273,7 +315,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://910069730.github.io/categories/index.html" data-id="cke1d1qhu0000z8uy3p0v6zs7" class="article-share-link">Share</a>
+      <a data-url="https://910069730.github.io/categories/index.html" data-id="cke1fdiaf00009wuy8nu9eo43" class="article-share-link">Share</a>
       
       
     </footer>
