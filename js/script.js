@@ -156,11 +156,11 @@ $('.article-entry .category-list-item').on('click',function(){
 });
 
 //页面整体生成
- $('#get_all').on('click',function(){
-   $('.get_all').css({display:"none"});
-   $('#header').css({boxShadow:"none"});
-   $('.outer').fadeIn();
-   $('#footer').fadeIn();
- });
+//  $('#get_all').on('click',function(){
+//    $('.get_all').css({display:"none"});
+//    $('#header').css({boxShadow:"none"});
+//    $('.outer').fadeIn();
+//    $('#footer').fadeIn();
+//  });
 
 });
