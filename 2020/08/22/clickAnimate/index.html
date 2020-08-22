@@ -76,6 +76,12 @@
 .aplayer-button{
   width: 100% !important;
   height: 100% !important;
+  box-shadow: none !important;
+  background: none !important;
+  /* background: -webkit-radial-gradient(circle, rgba(255,255,255,.8), rgba(34,65,104, 0.9), rgba(255,255,255,.8)) !important; */
+  /* box-shadow: 0 0 10px 10px rgba(83,119,133, 0.9) inset !important; */
+  border-radius: 50% !important;
+  /* opacity: .5 !important; */
 }
 .aplayer-play{
   border: none !important;
@@ -84,11 +90,21 @@
 .aplayer-pause{
   border: none !important;
   right: 0 !important;
-  top: -1px !important;
+  /* top: -1px !important; */
+  bottom: 0 !important;
+}
+.aplayer-play path,.aplayer-pause path{
+  fill:transparent !important;
+  stroke:#fff !important;
+  /* stroke:rgba(255,255,255,.8) !important; */
 }
 .aplayer svg{
   width: 100% !important;
   height: 100% !important;
+}
+.aplayer-pause svg{
+  top: 0 !important;
+  left: 1px !important;
 }
 .aplayer-play svg{
   top: 0 !important;
@@ -395,7 +411,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://910069730.github.io/2020/08/22/clickAnimate/" data-id="cke5pm8q10003s0uy0llydp5r" class="article-share-link">Share</a>
+      <a data-url="https://910069730.github.io/2020/08/22/clickAnimate/" data-id="cke5rrem20002f4uy1gv10rhh" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jquery%E5%AE%9E%E7%8E%B0%E9%BC%A0%E6%A0%87%E7%82%B9%E5%87%BB%E6%98%BE%E7%A4%BA%E6%96%87%E5%AD%97%E4%B8%8A%E6%B5%AE%E6%95%88%E6%9E%9C/" rel="tag">jquery实现鼠标点击显示文字上浮效果</a></li></ul>

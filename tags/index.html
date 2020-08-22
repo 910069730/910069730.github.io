@@ -72,6 +72,12 @@
 .aplayer-button{
   width: 100% !important;
   height: 100% !important;
+  box-shadow: none !important;
+  background: none !important;
+  /* background: -webkit-radial-gradient(circle, rgba(255,255,255,.8), rgba(34,65,104, 0.9), rgba(255,255,255,.8)) !important; */
+  /* box-shadow: 0 0 10px 10px rgba(83,119,133, 0.9) inset !important; */
+  border-radius: 50% !important;
+  /* opacity: .5 !important; */
 }
 .aplayer-play{
   border: none !important;
@@ -80,11 +86,21 @@
 .aplayer-pause{
   border: none !important;
   right: 0 !important;
-  top: -1px !important;
+  /* top: -1px !important; */
+  bottom: 0 !important;
+}
+.aplayer-play path,.aplayer-pause path{
+  fill:transparent !important;
+  stroke:#fff !important;
+  /* stroke:rgba(255,255,255,.8) !important; */
 }
 .aplayer svg{
   width: 100% !important;
   height: 100% !important;
+}
+.aplayer-pause svg{
+  top: 0 !important;
+  left: 1px !important;
 }
 .aplayer-play svg{
   top: 0 !important;
@@ -384,7 +400,7 @@
         
     </div>
     <footer class="article-footer">
-      <a data-url="https://910069730.github.io/tags/index.html" data-id="cke5pm8q00002s0uy2dpsem49" class="article-share-link">Share</a>
+      <a data-url="https://910069730.github.io/tags/index.html" data-id="cke5rrem60003f4uy1ek2a6db" class="article-share-link">Share</a>
       
       
     </footer>
