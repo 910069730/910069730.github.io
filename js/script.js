@@ -132,6 +132,8 @@ if (isMobileNavAnim) return;
 
 startMobileNavAnim();
 $container.toggleClass('mobile-nav-on');
+// document.getElementById('c_n7').style.width="70% !important";
+$('#c_n7').get(0).style.display="none";
 stopMobileNavAnim();
 });
 
@@ -139,6 +141,7 @@ $('#wrap').on('click', function(){
 if (isMobileNavAnim || !$container.hasClass('mobile-nav-on')) return;
 
 $container.removeClass('mobile-nav-on');
+$('#c_n7').get(0).style.display="block";
 });
 
 //返回顶部
