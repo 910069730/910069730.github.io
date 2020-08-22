@@ -210,3 +210,7 @@ $('.article-entry .category-list-item').on('click',function(){
 
 
 });
+
+console.log("\n %c 相互交流学习一下😀 %c QQ:%c910069730 \n","color: orange; background: #112233; padding:5px 0;","background: #334455; padding:5px 0;color:#fff","background: #334455; padding:5px 0;color:#fff");
+
+//鼠标移动星星特效

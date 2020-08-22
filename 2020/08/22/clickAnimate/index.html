@@ -36,6 +36,11 @@
   
     <link rel="icon" href="/favicon.png">
   
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+ 
   <!-- 
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
    -->
@@ -44,6 +49,46 @@
 
 <meta name="generator" content="Hexo 5.0.2"></head>
 <style>
+#sidebar,#main{
+  position: relative;
+  z-index: 99999;
+}
+/* 播放器样式 */
+.aplayer{
+  z-index: 99999999999999999999999999999999999;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  top:-100px;
+  background: transparent;
+  border: none !important;
+  /* position: fixed;
+  left: 0;
+  top: 0; */
+}
+.aplayer-pic{
+  background: none !important;
+}
+.aplayer-button{
+  width: 100% !important;
+  height: 100% !important;
+}
+.aplayer-play{
+  border: none !important;
+  margin: 0 -33px -33px 0 !important;
+}
+.aplayer-pause{
+  border: none !important;
+  right: 0 !important;
+  top: -1px !important;
+}
+.aplayer svg{
+  width: 100% !important;
+  height: 100% !important;
+}
+.aplayer-play svg{
+  top: 0 !important;
+}
   /* cyrillic-ext */
 @font-face {
   font-family: 'Source Code Pro';
@@ -255,13 +300,30 @@
   <!-- <div class="get_all">
     <div id="get_all" style="font-weight: 700;">∨</div>
   </div> -->
+  <!-- <div id="stars" style="width: 100%;height: 100%;position: fixed;left: 0; top: 0; background: rgba(255,255,255,.5);z-index: 1;overflow: hidden;"></div> -->
   <div id="container" >
     <div id="wrap" >
-      <header id="header" style="border-bottom:none;">
+      <header id="header" style="border-bottom:none;z-index: 99999999;">
+  <!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=27570917&auto=1&height=66"></iframe> -->
+ 
+  <!-- <div>
+     {% if theme.background_music %}
+     <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=210  height="110" src="{{theme.background_music}}"></iframe>
+     {% endif %}
+  </div>
+  {% set cc={'by': 1, 'by-nc':1, 'by-nc-nd':1,'by-nc-sa':1,''by-nd':1,'by-sa':1,'zero':1} %}
+  {% if theme.creative_commons in cc %} -->
   <div id="banner"></div>
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
+        <meting-js
+        auto="https://y.qq.com/n/yqq/playlist/7095885579.html#stat=y_new.index.playlist.pic"
+        list-folded=true
+        mini=true
+        autoplay=true
+        lrc-type=1
+     </meting-js>
         <a href="/" id="logo">welcome</a>
       </h1>
       
@@ -292,7 +354,7 @@
     </div>
   </div>
 </header>
-      <div class="outer" style="background:#eee;box-shadow: 0 0 10px 10px #000 inset;position: relative;">
+      <div class="outer" id="outer" style="background:#eee;box-shadow: 0 0 10px 10px #000 inset;position: relative;">
         <section id="main"><article id="post-clickAnimate" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/08/22/clickAnimate/" class="article-date">
@@ -328,7 +390,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://910069730.github.io/2020/08/22/clickAnimate/" data-id="cke57pv7b0003scuy2gkfgb13" class="article-share-link">Share</a>
+      <a data-url="https://910069730.github.io/2020/08/22/clickAnimate/" data-id="cke5o8rio0003tguy5o0d900p" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jquery%E5%AE%9E%E7%8E%B0%E9%BC%A0%E6%A0%87%E7%82%B9%E5%87%BB%E6%98%BE%E7%A4%BA%E6%96%87%E5%AD%97%E4%B8%8A%E6%B5%AE%E6%95%88%E6%9E%9C/" rel="tag">jquery实现鼠标点击显示文字上浮效果</a></li></ul>
@@ -544,5 +606,112 @@
 
 
   </div>
+
+
+  <!-- 页面鼠标移动线条特效 -->
+  <script type="text/javascript">
+  /**
+ * Copyright (c) 2016 hustcc
+ * License: MIT
+ * Version: v1.0.1
+ * GitHub: https://github.com/hustcc/canvas-nest.js
+**/
+!function(){function n(n,e,t){return n.getAttribute(e)||t}function e(n){return document.getElementsByTagName(n)}function t(){var t=e("script"),o=t.length,i=t[o-1];return{l:o,z:n(i,"zIndex",-1),o:n(i,"opacity",.5),c:n(i,"color","0,0,0"),n:n(i,"count",99)}}function o(){a=m.width=window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth,c=m.height=window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight}function i(){r.clearRect(0,0,a,c);var n,e,t,o,m,l;s.forEach(function(i,x){for(i.x+=i.xa,i.y+=i.ya,i.xa*=i.x>a||i.x<0?-1:1,i.ya*=i.y>c||i.y<0?-1:1,r.fillRect(i.x-.5,i.y-.5,1,1),e=x+1;e<u.length;e++)n=u[e],null!==n.x&&null!==n.y&&(o=i.x-n.x,m=i.y-n.y,l=o*o+m*m,l<n.max&&(n===y&&l>=n.max/2&&(i.x-=.03*o,i.y-=.03*m),t=(n.max-l)/n.max,r.beginPath(),r.lineWidth=t/2,r.strokeStyle="rgba("+d.c+","+(t+.2)+")",r.moveTo(i.x,i.y),r.lineTo(n.x,n.y),r.stroke()))}),x(i)}var a,c,u,m=document.createElement("canvas"),d=t(),l="c_n"+d.l,r=m.getContext("2d"),x=window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||function(n){window.setTimeout(n,1e3/45)},w=Math.random,y={x:null,y:null,max:2e4};m.id=l,m.style.cssText="position:fixed;top:0;left:0;z-index:"+d.z+";opacity:"+d.o,e("body")[0].appendChild(m),o(),window.onresize=o,window.onmousemove=function(n){n=n||window.event,y.x=n.clientX,y.y=n.clientY},window.onmouseout=function(){y.x=null,y.y=null};for(var s=[],f=0;d.n>f;f++){var h=w()*a,g=w()*c,v=2*w()-1,p=2*w()-1;s.push({x:h,y:g,xa:v,ya:p,max:6e3})}u=s.concat([y]),setTimeout(function(){i()},100)}();
+  </script>　
+<script>
+!function(){
+ 
+ function n(n,e,t){
+  
+ return n.getAttribute(e)||t
+  
+ }
+  
+ function e(n){
+  
+ return document.getElementsByTagName(n)
+  
+ }
+  
+ function t(){
+  
+ var t=e("script"),o=t.length,i=t[o-1];
+  
+ return{
+  
+ l:o,z:n(i,"zIndex",-1),o:n(i,"opacity",.3),c:n(i,"color","0,0,0"),n:n(i,"count",128)
+  
+ }
+  
+ }
+  
+ function o(){
+  
+ a=m.width=window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth,
+  
+ c=m.height=window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight
+  
+ }
+  
+ function i(){
+  
+ r.clearRect(0,0,a,c);
+  
+ var n,e,t,o,m,l;
+  
+ s.forEach(function(i,x){
+  
+ for(i.x+=i.xa,i.y+=i.ya,i.xa*=i.x>a||i.x<0?-1:1,i.ya*=i.y>c||i.y<0?-1:1,r.fillRect(i.x-.5,i.y-.5,1,1),e=x+1;e<u.length;e++)n=u[e],
+  
+ null!==n.x&&null!==n.y&&(o=i.x-n.x,m=i.y-n.y,
+  
+ l=o*o+m*m,l<n.max&&(n===y&&l>=n.max/2&&(i.x-=.03*o,i.y-=.03*m),
+  
+ t=(n.max-l)/n.max,r.beginPath(),r.lineWidth=t/2,r.strokeStyle="rgba("+d.c+","+(t+.2)+")",r.moveTo(i.x,i.y),r.lineTo(n.x,n.y),r.stroke()))
+  
+ }),
+  
+ x(i)
+  
+ }
+  
+ var a,c,u,m=document.createElement("canvas"),
+  
+ d=t(),l="c_n"+d.l,r=m.getContext("2d"),
+  
+ x=window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||
+  
+ function(n){
+  
+ window.setTimeout(n,1e3/45)
+  
+ },
+  
+ w=Math.random,y={x:null,y:null,max:2e4};m.id=l,m.style.cssText="width:100%;position:fixed;top:0;left:0;z-index:0;opacity:"+d.o,$('#outer').append(m),o(),window.onresize=o,
+  
+ window.onmousemove=function(n){
+  
+ n=n||window.event,y.x=n.clientX,y.y=n.clientY
+  
+ },
+  
+ window.onmouseout=function(){
+  
+ y.x=null,y.y=null
+  
+ };
+  
+ for(var s=[],f=0;d.n>f;f++){
+  
+ var h=w()*a,g=w()*c,v=2*w()-1,p=2*w()-1;s.push({x:h,y:g,xa:v,ya:p,max:6e3})
+  
+ }
+  
+ u=s.concat([y]),
+  
+ setTimeout(function(){i()},100)
+  
+ }();
+</script>
 </body>
 </html>
