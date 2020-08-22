@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html >
+<html>
 <head>
   <meta charset="utf-8">
   
@@ -247,11 +247,11 @@
   box-shadow: 0 0 100px 55px #000;
 } */
 </style>
-<body>
+<body >
   <!-- <div class="get_all">
     <div id="get_all" style="font-weight: 700;">∨</div>
   </div> -->
-  <div id="container">
+  <div id="container" >
     <div id="wrap" >
       <header id="header" style="border-bottom:none;">
   <div id="banner"></div>
@@ -291,6 +291,53 @@
       <div class="outer" style="background:#eee;box-shadow: 0 0 10px 10px #000 inset;position: relative;">
         <section id="main">
   
+    <article id="post-clickAnimate" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/08/22/clickAnimate/" class="article-date">
+  <time datetime="2020-08-22T04:27:05.996Z" itemprop="datePublished">2020-08-22</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/jquery/">jquery</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/08/22/clickAnimate/">jquery实现鼠标点击显示文字上浮效果</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>##功能效果图如下</p>
+<p><img src="/2020/08/22/clickAnimate/clickAnimation.jpg"></p>
+<p>##功能代码如下：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">        &lt;script src=&quot;jquery-3.1.0.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">        &lt;title&gt;&lt;/title&gt;</span><br><span class="line">        &lt;style&gt;</span><br><span class="line">            body&#123;</span><br><span class="line">                position: absolute;</span><br><span class="line">                width: 100%;</span><br><span class="line">                height: 100%;</span><br><span class="line">            &#125;</span><br><span class="line">        &lt;/style&gt;</span><br><span class="line">    &lt;/head&gt;</span><br><span class="line">    &lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">$(function()&#123;</span><br><span class="line"> //鼠标点击显示文字上浮效果</span><br><span class="line">    var click_count=0;</span><br><span class="line">    $(document).click(function(e)&#123; </span><br><span class="line">        var text=new Array(&quot;富强&quot;, &quot;民主&quot;, &quot;文明&quot;, &quot;和谐&quot;, &quot;自由&quot;, &quot;平等&quot;, &quot;公正&quot;, &quot;法治&quot;, &quot;爱国&quot;, &quot;敬业&quot;, &quot;诚信&quot;, &quot;友善&quot;); </span><br><span class="line">        // var text = str.split(&quot;,&quot;); </span><br><span class="line">        var color=new Array(//颜色数组</span><br><span class="line">            &quot;#C01E22&quot;,</span><br><span class="line">            &quot;#0088cc&quot;,</span><br><span class="line">            &quot;#FF5E52&quot;,</span><br><span class="line">            &quot;#2CDB87&quot;,</span><br><span class="line">            &quot;#00D6AC&quot;,</span><br><span class="line">            &quot;#EA84FF&quot;,</span><br><span class="line">            &quot;#FDAC5F&quot;,</span><br><span class="line">            &quot;#FD77B2&quot;,</span><br><span class="line">            &quot;#0DAAEA&quot;,</span><br><span class="line">            &quot;#C38CFF&quot;,</span><br><span class="line">            &quot;#FF926F&quot;,</span><br><span class="line">            &quot;#8AC78F&quot;,</span><br><span class="line">            &quot;#C7C183&quot;,</span><br><span class="line">            &quot;#9370DB&quot;,</span><br><span class="line">            &quot;#2f889a&quot;,</span><br><span class="line">            &quot;#9e5ae2&quot;);</span><br><span class="line">        var n=Math.floor(Math.random()*color.length+1)-1;</span><br><span class="line">        click_count=(click_count+1)%text.length;</span><br><span class="line">        var $i=$(&quot;&lt;span&gt;&quot;).text(text[click_count]);</span><br><span class="line">        var x=e.pageX,y=e.pageY;//鼠标点击坐标</span><br><span class="line">        $i.css(&#123;</span><br><span class="line">            &quot;position&quot;:&quot;absolute&quot;,</span><br><span class="line">            &quot;z-index&quot;:&quot;10000&quot;,</span><br><span class="line">            &quot;top&quot;:y-15,</span><br><span class="line">            &quot;left&quot;:x,</span><br><span class="line">            &quot;color&quot;:color[n],</span><br><span class="line">            &quot;font-size&quot;:&quot;14px&quot;,</span><br><span class="line">            &quot;font-weight&quot;:&quot;700&quot;,</span><br><span class="line">            &quot;cursor&quot;:&quot;default&quot;</span><br><span class="line">        &#125;);</span><br><span class="line">        $(&quot;body&quot;).append($i);</span><br><span class="line">        $i.animate(&#123;</span><br><span class="line">            &quot;top&quot;:y-180,//纵向偏移量</span><br><span class="line">            &quot;opacity&quot;:&quot;0&quot;&#125;,2000,function()&#123;</span><br><span class="line">        $i.remove();//移除显示的文字</span><br><span class="line">        &#125;);</span><br><span class="line">        e.stopPropagation();//防止冒泡&#125;)</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;);</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">    &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+      
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://910069730.github.io/2020/08/22/clickAnimate/" data-id="cke57pv7b0003scuy2gkfgb13" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jquery%E5%AE%9E%E7%8E%B0%E9%BC%A0%E6%A0%87%E7%82%B9%E5%87%BB%E6%98%BE%E7%A4%BA%E6%96%87%E5%AD%97%E4%B8%8A%E6%B5%AE%E6%95%88%E6%9E%9C/" rel="tag">jquery实现鼠标点击显示文字上浮效果</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-html-title" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/08/18/html-title/" class="article-date">
@@ -323,7 +370,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://910069730.github.io/2020/08/18/html-title/" data-id="cke4ct9c50007p4uyfx41cnga" class="article-share-link">Share</a>
+      <a data-url="https://910069730.github.io/2020/08/18/html-title/" data-id="cke57pv7o0008scuy84iv6p8q" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%85%B3%E4%BA%8E%E9%A1%B5%E9%9D%A2title%E7%9A%84%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE/" rel="tag">关于页面title的字体设置</a></li></ul>
@@ -369,7 +416,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://910069730.github.io/2020/08/17/returnTop/" data-id="cke4ct9c60008p4uy6mz33hnq" class="article-share-link">Share</a>
+      <a data-url="https://910069730.github.io/2020/08/17/returnTop/" data-id="cke57pv7z000qscuyc5n5htbg" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jquery%E5%AE%9E%E7%8E%B0%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8/" rel="tag">jquery实现返回顶部</a></li></ul>
@@ -422,7 +469,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://910069730.github.io/2020/08/16/aboutImages/" data-id="cke4ct9c50006p4uy83t1gea5" class="article-share-link">Share</a>
+      <a data-url="https://910069730.github.io/2020/08/16/aboutImages/" data-id="cke57pv740001scuyazcy3xnd" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/image%E6%A0%BC%E5%BC%8F/" rel="tag">image格式</a></li></ul>
@@ -471,7 +518,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://910069730.github.io/2020/08/15/hexo/" data-id="cke4ct9c10003p4uyac1gczj8" class="article-share-link">Share</a>
+      <a data-url="https://910069730.github.io/2020/08/15/hexo/" data-id="cke57pv7n0007scuy81s8bpd2" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo%E6%90%AD%E5%BB%BA/" rel="tag">hexo搭建</a></li></ul>
@@ -527,7 +574,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://910069730.github.io/2020/08/15/hello-world/" data-id="cke4ct9bu0001p4uy4x5x75ks" class="article-share-link">Share</a>
+      <a data-url="https://910069730.github.io/2020/08/15/hello-world/" data-id="cke57pv7h0006scuy8qdgbwf4" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li></ul>
@@ -569,7 +616,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">🔖Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo%E6%90%AD%E5%BB%BA/" rel="tag">hexo搭建</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/image%E6%A0%BC%E5%BC%8F/" rel="tag">image格式</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jquery%E5%AE%9E%E7%8E%B0%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8/" rel="tag">jquery实现返回顶部</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%85%B3%E4%BA%8E%E9%A1%B5%E9%9D%A2title%E7%9A%84%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE/" rel="tag">关于页面title的字体设置</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo%E6%90%AD%E5%BB%BA/" rel="tag">hexo搭建</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/image%E6%A0%BC%E5%BC%8F/" rel="tag">image格式</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jquery%E5%AE%9E%E7%8E%B0%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8/" rel="tag">jquery实现返回顶部</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jquery%E5%AE%9E%E7%8E%B0%E9%BC%A0%E6%A0%87%E7%82%B9%E5%87%BB%E6%98%BE%E7%A4%BA%E6%96%87%E5%AD%97%E4%B8%8A%E6%B5%AE%E6%95%88%E6%9E%9C/" rel="tag">jquery实现鼠标点击显示文字上浮效果</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%85%B3%E4%BA%8E%E9%A1%B5%E9%9D%A2title%E7%9A%84%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE/" rel="tag">关于页面title的字体设置</a></li></ul>
     </div>
   </div>
 
@@ -579,7 +626,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">🎈Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/hexo%E6%90%AD%E5%BB%BA/" style="font-size: 10px;">hexo搭建</a> <a href="/tags/image%E6%A0%BC%E5%BC%8F/" style="font-size: 10px;">image格式</a> <a href="/tags/jquery%E5%AE%9E%E7%8E%B0%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8/" style="font-size: 10px;">jquery实现返回顶部</a> <a href="/tags/%E5%85%B3%E4%BA%8E%E9%A1%B5%E9%9D%A2title%E7%9A%84%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE/" style="font-size: 10px;">关于页面title的字体设置</a>
+      <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/hexo%E6%90%AD%E5%BB%BA/" style="font-size: 10px;">hexo搭建</a> <a href="/tags/image%E6%A0%BC%E5%BC%8F/" style="font-size: 10px;">image格式</a> <a href="/tags/jquery%E5%AE%9E%E7%8E%B0%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8/" style="font-size: 10px;">jquery实现返回顶部</a> <a href="/tags/jquery%E5%AE%9E%E7%8E%B0%E9%BC%A0%E6%A0%87%E7%82%B9%E5%87%BB%E6%98%BE%E7%A4%BA%E6%96%87%E5%AD%97%E4%B8%8A%E6%B5%AE%E6%95%88%E6%9E%9C/" style="font-size: 10px;">jquery实现鼠标点击显示文字上浮效果</a> <a href="/tags/%E5%85%B3%E4%BA%8E%E9%A1%B5%E9%9D%A2title%E7%9A%84%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE/" style="font-size: 10px;">关于页面title的字体设置</a>
     </div>
   </div>
 
@@ -601,6 +648,10 @@
       <ul>
         
           <li>
+            <a href="/2020/08/22/clickAnimate/">jquery实现鼠标点击显示文字上浮效果</a>
+          </li>
+        
+          <li>
             <a href="/2020/08/18/html-title/">关于页面title的字体设置</a>
           </li>
         
@@ -614,10 +665,6 @@
         
           <li>
             <a href="/2020/08/15/hexo/">搭建hexo方法</a>
-          </li>
-        
-          <li>
-            <a href="/2020/08/15/hello-world/">Hello World</a>
           </li>
         
       </ul>

@@ -155,6 +155,51 @@ $('.article-entry .category-list-item').on('click',function(){
   location.href="https://910069730.github.io"+$(this).find('a').attr('href');
 });
 
+//鼠标点击显示文字上浮效果
+/* 鼠标特效 */
+    var click_count=0;
+    $(document).click(function(e){ 
+        var text=new Array("HTML", "CSS", "JavaScript", "jQuery", "Bootstrap", "Swiper", "Animate" ,"PHP", "MYSQL", "NodeJS", "Vue", "React"); 
+        // var text = str.split(","); 
+        var color=new Array(//颜色数组
+            "#C01E22",
+            "#0088cc",
+            "#FF5E52",
+            "#2CDB87",
+            "#00D6AC",
+            "#EA84FF",
+            "#FDAC5F",
+            "#FD77B2",
+            "#0DAAEA",
+            "#C38CFF",
+            "#FF926F",
+            "#8AC78F",
+            "#C7C183",
+            "#9370DB",
+            "#2f889a",
+            "#9e5ae2");
+        var n=Math.floor(Math.random()*color.length+1)-1;
+        click_count=(click_count+1)%text.length;
+        var $i=$("<span>").text(text[click_count]);
+        var x=e.clientX,y=e.clientY;//鼠标点击坐标
+        $i.css({
+            "position":"fixed",
+            "z-index":"10000",
+            "top":y-15,
+            "left":x,
+            "color":color[n],
+            "font-size":"14px",
+            "font-weight":"700",
+            "cursor":"default"
+        });
+        $("body").append($i);
+        $i.animate({
+            "top":y-180,//纵向偏移量
+            "opacity":"0"},2000,function(){
+        $i.remove();//移除显示的文字
+        });
+        e.stopPropagation();//防止冒泡})
+    });
 //页面整体生成
 //  $('#get_all').on('click',function(){
 //    $('.get_all').css({display:"none"});
@@ -162,5 +207,6 @@ $('.article-entry .category-list-item').on('click',function(){
 //    $('.outer').fadeIn();
 //    $('#footer').fadeIn();
 //  });
+
 
 });
