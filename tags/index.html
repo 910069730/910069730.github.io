@@ -62,6 +62,7 @@
   top:-100px;
   background: transparent;
   border: none !important;
+  box-shadow: none !important;
   /* position: fixed;
   left: 0;
   top: 0; */
@@ -267,6 +268,10 @@
  html,body{
   box-shadow:none !important;
  }
+ /* webkit, opera, IE9 */
+::selection { background:rgb(0,0,0);color: rgb(11,234,235);text-shadow: 0 0 3px rgb(11,234,235); }
+/* mozilla firefox */
+::-moz-selection { background:rgb(0,0,0);color: rgb(11,234,235); }
  /* .outer{
    display: none;
  }
@@ -329,7 +334,7 @@
   </div>
   {% set cc={'by': 1, 'by-nc':1, 'by-nc-nd':1,'by-nc-sa':1,''by-nd':1,'by-sa':1,'zero':1} %}
   {% if theme.creative_commons in cc %} -->
-  <div id="banner"></div>
+  <div id="banner" ></div>
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
@@ -400,7 +405,7 @@
         
     </div>
     <footer class="article-footer">
-      <a data-url="https://910069730.github.io/tags/index.html" data-id="cke5rrem60003f4uy1ek2a6db" class="article-share-link">Share</a>
+      <a data-url="https://910069730.github.io/tags/index.html" data-id="cke5t9jxw0000y0uy23x836n4" class="article-share-link">Share</a>
       
       
     </footer>
@@ -604,6 +609,7 @@
 
 
   </div>
+
 
 
   <!-- 页面鼠标移动线条特效 -->

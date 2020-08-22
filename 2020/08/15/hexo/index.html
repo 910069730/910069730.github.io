@@ -64,6 +64,7 @@
   top:-100px;
   background: transparent;
   border: none !important;
+  box-shadow: none !important;
   /* position: fixed;
   left: 0;
   top: 0; */
@@ -269,6 +270,10 @@
  html,body{
   box-shadow:none !important;
  }
+ /* webkit, opera, IE9 */
+::selection { background:rgb(0,0,0);color: rgb(11,234,235);text-shadow: 0 0 3px rgb(11,234,235); }
+/* mozilla firefox */
+::-moz-selection { background:rgb(0,0,0);color: rgb(11,234,235); }
  /* .outer{
    display: none;
  }
@@ -331,7 +336,7 @@
   </div>
   {% set cc={'by': 1, 'by-nc':1, 'by-nc-nd':1,'by-nc-sa':1,''by-nd':1,'by-sa':1,'zero':1} %}
   {% if theme.creative_commons in cc %} -->
-  <div id="banner"></div>
+  <div id="banner" ></div>
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
@@ -411,7 +416,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://910069730.github.io/2020/08/15/hexo/" data-id="cke5rremy0007f4uy1vny1nb8" class="article-share-link">Share</a>
+      <a data-url="https://910069730.github.io/2020/08/15/hexo/" data-id="cke5t9jzb0007y0uy7k9ybic4" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo%E6%90%AD%E5%BB%BA/" rel="tag">hexo搭建</a></li></ul>
@@ -636,6 +641,7 @@
 
 
   </div>
+
 
 
   <!-- 页面鼠标移动线条特效 -->

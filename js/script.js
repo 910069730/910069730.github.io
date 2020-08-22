@@ -190,7 +190,8 @@ $('.article-entry .category-list-item').on('click',function(){
             "color":color[n],
             "font-size":"14px",
             "font-weight":"700",
-            "cursor":"default"
+            "cursor":"default",
+            "textShadow":"0px 0px 5px"+color[n]
         });
         $("body").append($i);
         $i.animate({
@@ -211,6 +212,4 @@ $('.article-entry .category-list-item').on('click',function(){
 
 });
 
-console.log("\n %c 相互交流学习一下😀 %c QQ:%c910069730 \n","color: orange; background: #112233; padding:5px 0;","background: #334455; padding:5px 0;color:#fff","background: #334455; padding:5px 0;color:#fff");
-
-//鼠标移动星星特效
+console.log("\n %c 相互交流学习一下😀 %c QQ:%c910069730 \n","color: orange; background: #112233; padding:5px 0;text-shadow: 0px 0px 2px yellow;","background: #334455; padding:5px 0;color:#fff;text-shadow: 0px 0px 2px #fff;","background: #334455; padding:5px 0;color:rgb(11,234,235);text-shadow: 0px 0px 5px #258fb8;");

@@ -66,6 +66,7 @@
   top:-100px;
   background: transparent;
   border: none !important;
+  box-shadow: none !important;
   /* position: fixed;
   left: 0;
   top: 0; */
@@ -271,6 +272,10 @@
  html,body{
   box-shadow:none !important;
  }
+ /* webkit, opera, IE9 */
+::selection { background:rgb(0,0,0);color: rgb(11,234,235);text-shadow: 0 0 3px rgb(11,234,235); }
+/* mozilla firefox */
+::-moz-selection { background:rgb(0,0,0);color: rgb(11,234,235); }
  /* .outer{
    display: none;
  }
@@ -333,7 +338,7 @@
   </div>
   {% set cc={'by': 1, 'by-nc':1, 'by-nc-nd':1,'by-nc-sa':1,''by-nd':1,'by-sa':1,'zero':1} %}
   {% if theme.creative_commons in cc %} -->
-  <div id="banner"></div>
+  <div id="banner" ></div>
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
@@ -411,7 +416,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://910069730.github.io/2020/08/22/clickAnimate/" data-id="cke5rrem20002f4uy1gv10rhh" class="article-share-link">Share</a>
+      <a data-url="https://910069730.github.io/2020/08/22/clickAnimate/" data-id="cke5t9jz70003y0uycddn8nkb" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jquery%E5%AE%9E%E7%8E%B0%E9%BC%A0%E6%A0%87%E7%82%B9%E5%87%BB%E6%98%BE%E7%A4%BA%E6%96%87%E5%AD%97%E4%B8%8A%E6%B5%AE%E6%95%88%E6%9E%9C/" rel="tag">jquery实现鼠标点击显示文字上浮效果</a></li></ul>
@@ -627,6 +632,7 @@
 
 
   </div>
+
 
 
   <!-- 页面鼠标移动线条特效 -->
