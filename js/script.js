@@ -133,7 +133,9 @@ if (isMobileNavAnim) return;
 startMobileNavAnim();
 $container.toggleClass('mobile-nav-on');
 // document.getElementById('c_n7').style.width="70% !important";
-$('#c_n7').fadeOut();
+$('#mobile-nav').css({display:"block"});
+$('#c_n7').stop().fadeOut();
+// $('#header').get(0).style.boxShadow="none";
 stopMobileNavAnim();
 });
 
@@ -141,7 +143,8 @@ $('#wrap').on('click', function(){
 if (isMobileNavAnim || !$container.hasClass('mobile-nav-on')) return;
 
 $container.removeClass('mobile-nav-on');
-$('#c_n7').fadeIn();
+$('#c_n7').stop().fadeIn();
+// $('#header').get(0).style.boxShadow="0 0 100px 55px #000";
 });
 
 //返回顶部
@@ -212,7 +215,8 @@ $('.article-entry .category-list-item').on('click',function(){
 //    $('#footer').fadeIn();
 //  });
 
-
+$('.outer').fadeIn(2000);
+$('#footer').fadeIn(2000);
 });
 
 console.log("\n %c 相互交流学习一下😀 %c QQ:%c910069730 \n","color: orange; background: #112233; padding:5px 0;text-shadow: 0px 0px 2px yellow;","background: #334455; padding:5px 0;color:#fff;text-shadow: 0px 0px 2px #fff;","background: #334455; padding:5px 0;color:rgb(11,234,235);text-shadow: 0px 0px 5px #258fb8;");

@@ -260,8 +260,16 @@
     opacity: 0;
   }
 }
+#header{
+  box-shadow: 0 0 100px 55px #000;
+  transition: 1s;
+}
+@media screen and (max-width:1260px){
+  #header{
+  box-shadow: none;
+}
+}
  @media screen and (max-width:768px){
-
   .article-entry .tag-cloud-tags a{
     display: block !important;
     width: 100% !important;
@@ -291,12 +299,15 @@
 ::selection { background:rgb(0,0,0);color: rgb(11,234,235);text-shadow: 0 0 3px rgb(11,234,235); }
 /* mozilla firefox */
 ::-moz-selection { background:rgb(0,0,0);color: rgb(11,234,235); }
- /* .outer{
+ .outer{
    display: none;
  }
  #footer{
    display: none;
- } */
+ }
+ #mobile-nav{
+  display: none;
+ }
  .get_all{
     position: fixed;
     width: 100%;
@@ -879,7 +890,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://910069730.github.io/2020/08/15/hexo/" data-id="cke6m2si10007dcuy7vua2gko" class="article-share-link">Share</a>
+      <a data-url="https://910069730.github.io/2020/08/15/hexo/" data-id="cke6ot0m9000728uybepfca0s" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo%E6%90%AD%E5%BB%BA/" rel="tag">hexo搭建</a></li></ul>
