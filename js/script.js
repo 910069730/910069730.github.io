@@ -133,7 +133,8 @@ if (isMobileNavAnim) return;
 startMobileNavAnim();
 $container.toggleClass('mobile-nav-on');
 // document.getElementById('c_n7').style.width="70% !important";
-$('#mobile-nav').css({display:"block"});
+$('#mobile-nav').css({display:"block",transition:"1s"});
+$('html,body,#wrap').css({transition:"1s"});
 $('#c_n7').stop().fadeOut();
 // $('#header').get(0).style.boxShadow="none";
 stopMobileNavAnim();
@@ -218,7 +219,9 @@ $('.article-entry .category-list-item').on('click',function(){
 // $('.outer').fadeIn(2000,"linear",function(){
 //   $('#header').css({boxShadow:"none"});
 // });
-$('.outer').fadeIn(2000);
+$('.outer').fadeIn(2000,"linear",function(){
+  $('.starsBox').css({opacity:0.1});
+});
 $('#footer').fadeIn(2000);
 });
 
