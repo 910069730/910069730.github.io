@@ -215,9 +215,10 @@ $('.article-entry .category-list-item').on('click',function(){
 //    $('#footer').fadeIn();
 //  });
 
-$('.outer').fadeIn(2000,"linear",function(){
-  $('#header').css({boxShadow:"none"});
-});
+// $('.outer').fadeIn(2000,"linear",function(){
+//   $('#header').css({boxShadow:"none"});
+// });
+$('.outer').fadeIn(2000);
 $('#footer').fadeIn(2000);
 });
 
