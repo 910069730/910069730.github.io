@@ -292,15 +292,29 @@
  top: 15px;
  right: 0;
  opacity: 1;
- /* display: none; */
+ display: none;
  background: #fff;
  /* padding: 5px 15px; */
  border-radius: 15px;
  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.3);
  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  transition: 1s;
-  width: 0;
- padding:0;
+  width: 100%;
+}
+.search-form-input {
+    border: none;
+    background: none;
+    color: #555;
+    width: 100%;
+    font: 13px -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    outline: none;
+}
+.search-form-input{
+  /* position: absolute !important; */
+  /* top: 15px !important; */
+  /* right: 0 !important; */
+  /* border-radius: 15px !important; */
+ /* width: 0; */
+ /* padding:0; */
 }
 .search-form {
     position: absolute;
@@ -313,14 +327,7 @@
     -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.3);
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
-.search-form-input {
-    border: none;
-    background: none;
-    color: #555;
-    width: 100%;
-    font: 13px -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    outline: none;
-}
+
 .search-form-submit {
     position: absolute;
     display: none;
@@ -913,12 +920,14 @@
         
           <a id="nav-search-btn"  href="#" title="Search" class="nav-icon st-search-show-outputs"></a>
         
+
+        <div id="search-form-box" style="display: none;">
+          
+            <input type="text" class="search-form-input st-default-search-input" placeholder="请输入搜索内容..." style="border:none !important; width: 100% !important;height:100% !important;padding: 5px 30px !important;line-height: 30px;box-sizing: border-box;">
+          
+        </div>
       </nav>
-        <!-- <div id="search-form-box">
-          <input type="text" name="q1" results="0" class="search-form-input st-default-search-input" >
-          <button type="submit" class="search-form-submit"></button>
-          <input type="hidden" name="q6" value="910069730.github.io">
-        </div> -->
+ 
       <!-- <div id="search-form-wrap">
         <form action="http://www.baidu.com/s" method="get" accept-charset="UTF-8" target="_blank" class="search-form"><input type="search" name="q1" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="q6" value="910069730.github.io"></form>
       </div> -->
@@ -970,7 +979,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://910069730.github.io/2020/08/15/hello-world/" data-id="cke76q2yk000cmsuy9a2o2uar" class="article-share-link">Share</a>
+      <a data-url="https://910069730.github.io/2020/08/15/hello-world/" data-id="cke79m90o00073cuy2d1hfzo1" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li></ul>

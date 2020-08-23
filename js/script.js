@@ -25,9 +25,7 @@ $(function(){
 //  if (isSearchAnim) return;
 
 //  startSearchAnim();
-//  $searchWrap.get(0).style.width="100%";
-//  $searchWrap.get(0).style.padding="5px 15px";
-//  $('.search-form-submit').get(0).style.display="block";
+//  $searchWrap.get(0).style.display="block";
 //  stopSearchAnim(function(){
 //    $('.search-form-input').focus();
 //  });
@@ -35,12 +33,11 @@ $(function(){
 
 // $('.search-form-input').on('blur', function(){
 //  startSearchAnim();
-//  $searchWrap.get(0).style.width="0";
-//  $searchWrap.get(0).style.padding="0";
-//  $('.search-form-submit').get(0).style.display="none";
+//  $searchWrap.get(0).style.display="none";
 //  stopSearchAnim(); 
 // });
 
+// ----------------------------------------------------
 //  var $searchWrap = $('#search-form-wrap'),
 //  isSearchAnim = false,
 //  searchAnimDuration = 200;
