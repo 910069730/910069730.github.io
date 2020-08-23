@@ -282,6 +282,9 @@
   width: 80%;
 } */
 /* 搜索功能样式 */
+.st-ui-fallback{
+  width: 90% !important;
+}
 #header-inner{
   overflow: none !important;
 }
@@ -809,6 +812,32 @@
     opacity: 0.6;
   }
 }
+
+
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 1rem;
+  height: 1rem;
+  background-image: linear-gradient(135deg, #1DE9B6 0%, rgba(8, 196, 219, 0.5) 72%, rgba(0, 182, 234, 0.3) 100%);
+  background: #ddd;
+  opacity: 0.1;
+  box-shadow: 0 0 10px 10px #ddd;
+}
+::-webkit-scrollbar-track {
+  border-radius: 0;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background-image: linear-gradient(135deg, #1DE9B6 0%, #08c4db 72%, #057494 100%);
+  background: #666;
+  transition: all .2s;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 1px 1px #ddd inset;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(95, 95, 95, 0.8);
+}
 </style>
 <body >
   <!-- <div class="get_all">
@@ -972,7 +1001,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://910069730.github.io/2020/08/22/clickAnimate/" data-id="cke79m90a00033cuyf58r2ees" class="article-share-link">Share</a>
+      <a data-url="https://910069730.github.io/2020/08/22/clickAnimate/" data-id="cke7becre00034ouy0dnqfr6p" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jquery%E5%AE%9E%E7%8E%B0%E9%BC%A0%E6%A0%87%E7%82%B9%E5%87%BB%E6%98%BE%E7%A4%BA%E6%96%87%E5%AD%97%E4%B8%8A%E6%B5%AE%E6%95%88%E6%9E%9C/" rel="tag">jquery实现鼠标点击显示文字上浮效果</a></li></ul>
