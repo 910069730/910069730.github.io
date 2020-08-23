@@ -279,8 +279,60 @@
 /* .fancybox-wrap{
   width: 80%;
 } */
-
-
+/* 搜索功能样式 */
+#header-inner{
+  overflow: none !important;
+}
+#search-form-box{
+  box-sizing: border-box;
+ position: absolute;
+ /* width: 100%; */
+ height: 30px;
+ overflow: hidden;
+ top: 15px;
+ right: 0;
+ opacity: 1;
+ /* display: none; */
+ background: #fff;
+ /* padding: 5px 15px; */
+ border-radius: 15px;
+ -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+ box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: 1s;
+  width: 0;
+ padding:0;
+}
+.search-form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 5px 15px;
+    border-radius: 15px;
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.search-form-input {
+    border: none;
+    background: none;
+    color: #555;
+    width: 100%;
+    font: 13px -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    outline: none;
+}
+.search-form-submit {
+    position: absolute;
+    display: none;
+    top: 50%;
+    right: 10px;
+    margin-top: -7px;
+    font: 13px FontAwesome;
+    border: none;
+    background: none;
+    color: #bbb;
+    cursor: pointer;
+}
  @media screen and (max-width:768px){
   .article-entry .tag-cloud-tags a{
     display: block !important;
@@ -856,11 +908,20 @@
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed" ></a>
         
         <!-- <a id="nav-search-btn" class="nav-icon" title="Search" style="display: none;"></a> -->
-        <a id="nav-search-btn" class="nav-icon" title="Search" target="_blank" href="javascript:location.href='https://www.baidu.com/';" ></a>
+        <!-- <a id="nav-search-btn" class="nav-icon" title="Search"></a> -->
+        <!-- <a id="nav-search-btn" class="nav-icon" title="Search"></a> -->
+        
+          <a id="nav-search-btn"  href="#" title="Search" class="nav-icon st-search-show-outputs"></a>
+        
       </nav>
-      <div id="search-form-wrap">
+        <!-- <div id="search-form-box">
+          <input type="text" name="q1" results="0" class="search-form-input st-default-search-input" >
+          <button type="submit" class="search-form-submit"></button>
+          <input type="hidden" name="q6" value="910069730.github.io">
+        </div> -->
+      <!-- <div id="search-form-wrap">
         <form action="http://www.baidu.com/s" method="get" accept-charset="UTF-8" target="_blank" class="search-form"><input type="search" name="q1" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="q6" value="910069730.github.io"></form>
-      </div>
+      </div> -->
     </div>
   </div>
 </header>
@@ -899,7 +960,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://910069730.github.io/2020/08/17/returnTop/" data-id="cke6xl5e7000cecuycq7l4ktv" class="article-share-link">Share</a>
+      <a data-url="https://910069730.github.io/2020/08/17/returnTop/" data-id="cke76q2ym000hmsuyexi2accd" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jquery%E5%AE%9E%E7%8E%B0%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8/" rel="tag">jquery实现返回顶部</a></li></ul>
@@ -1096,7 +1157,14 @@
       </div>
     </div>
   </div>
-
+  <script type="text/javascript">
+    (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+    })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+    
+    _st('install','xX2WByXFnescu4MbaMwB','2.0.0');
+  </script>
 </footer>
     </div>
     <nav id="mobile-nav">
