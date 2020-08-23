@@ -106,6 +106,23 @@
 .aplayer-play svg{
   top: 0 !important;
 }
+/* 头像 */
+#avatar{
+  position: relative;
+}
+#avatar::after{
+  content: '☻';
+  display: block;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: center;
+  z-index: -1;
+  color: transparent;
+  text-shadow: 0 0 5px #aaa;
+}
+
   /* cyrillic-ext */
 @font-face {
   font-family: 'Source Code Pro';
@@ -414,7 +431,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://910069730.github.io/2020/08/22/clickAnimate/" data-id="cke6i9co70003xkuyexnja2zp" class="article-share-link">Share</a>
+      <a data-url="https://910069730.github.io/2020/08/22/clickAnimate/" data-id="cke6j3gqs00011wuy6yrq4m06" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jquery%E5%AE%9E%E7%8E%B0%E9%BC%A0%E6%A0%87%E7%82%B9%E5%87%BB%E6%98%BE%E7%A4%BA%E6%96%87%E5%AD%97%E4%B8%8A%E6%B5%AE%E6%95%88%E6%9E%9C/" rel="tag">jquery实现鼠标点击显示文字上浮效果</a></li></ul>
@@ -458,7 +475,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://910069730.github.io/2020/08/18/html-title/" data-id="cke6i9coc0008xkuyf53l2ft2" class="article-share-link">Share</a>
+      <a data-url="https://910069730.github.io/2020/08/18/html-title/" data-id="cke6j3guw00081wuy25hde1ps" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%85%B3%E4%BA%8E%E9%A1%B5%E9%9D%A2title%E7%9A%84%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE/" rel="tag">关于页面title的字体设置</a></li></ul>
@@ -504,7 +521,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://910069730.github.io/2020/08/17/returnTop/" data-id="cke6i9cok000qxkuybtjogd2e" class="article-share-link">Share</a>
+      <a data-url="https://910069730.github.io/2020/08/17/returnTop/" data-id="cke6j3guz000c1wuyfvss1txj" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jquery%E5%AE%9E%E7%8E%B0%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8/" rel="tag">jquery实现返回顶部</a></li></ul>
@@ -557,7 +574,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://910069730.github.io/2020/08/16/aboutImages/" data-id="cke6i9cnv0001xkuygtelako5" class="article-share-link">Share</a>
+      <a data-url="https://910069730.github.io/2020/08/16/aboutImages/" data-id="cke6j3guf00031wuy2w7169gn" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/image%E6%A0%BC%E5%BC%8F/" rel="tag">image格式</a></li></ul>
@@ -606,7 +623,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://910069730.github.io/2020/08/15/hexo/" data-id="cke6i9cob0007xkuyg9csf0fq" class="article-share-link">Share</a>
+      <a data-url="https://910069730.github.io/2020/08/15/hexo/" data-id="cke6j3guv00071wuy7mv4abhz" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo%E6%90%AD%E5%BB%BA/" rel="tag">hexo搭建</a></li></ul>
@@ -662,7 +679,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://910069730.github.io/2020/08/15/hello-world/" data-id="cke6i9coa0006xkuycrr50v38" class="article-share-link">Share</a>
+      <a data-url="https://910069730.github.io/2020/08/15/hello-world/" data-id="cke6j3gut00061wuydl8a9yqt" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li></ul>
@@ -680,9 +697,9 @@
         
           <aside id="sidebar">
   <div class="widget-wrap" style="padding: 10px;border: 5px solid #ddd;border-radius: 3px;border-radius: 3px;box-shadow: 0 -1px 4px #ccc inset;">
-    <div style="font-size: 6rem;text-align: center;">
+    <div style="font-size: 6rem;text-align: center;" id="avatar">
       <!-- <img src="https://910069730.github.io/favicon.png" alt="" class="avatar"  style="width: 60%;padding: 0 20%;margin-bottom: 15px;border-radius: 26%;"> -->
-      👦
+      <span>👦</span>
     </div>
     <h3 class="widget-title" style="text-align: center;color: #000;font-weight: 700;margin-bottom: 20px;text-transform:none;">Nigel</h3>
     <h5 class="widget-title" style="text-align: center;color: #999;font-weight: 700;text-transform:none;background: #ddd;margin-bottom: 10px;border: 5px solid #ddd;margin-left: 0;">🌏<p style="text-align: center;color: #000;font-weight: 700;text-transform:none;margin-top: 10px;background-color: #eee;padding: 5px 0;overflow: hidden;text-overflow: ellipsis;">China</p></h5>
