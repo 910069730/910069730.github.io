@@ -215,7 +215,9 @@ $('.article-entry .category-list-item').on('click',function(){
 //    $('#footer').fadeIn();
 //  });
 
-$('.outer').fadeIn(2000);
+$('.outer').fadeIn(2000,"linear",function(){
+  $('#header').get(0).style.boxShadow="none";
+});
 $('#footer').fadeIn(2000);
 });
 

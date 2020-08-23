@@ -258,13 +258,16 @@
     opacity: 0;
   }
 }
-#header{
-  box-shadow: 0 0 100px 55px #000;
+@media screen and (min-width:1261px){
+  #header{
+  box-shadow: 0 0 100px 55px #000 !important;
   transition: 1s;
+}
 }
 @media screen and (max-width:1260px){
   #header{
-  box-shadow: none;
+  box-shadow: 0 0 100px 55px #000;
+  transition: 1s;
 }
 }
  @media screen and (max-width:768px){
@@ -880,7 +883,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://910069730.github.io/categories/index.html" data-id="cke6ot0l8000028uy40la80or" class="article-share-link">Share</a>
+      <a data-url="https://910069730.github.io/categories/index.html" data-id="cke6p7ajw00009guyej1y3zcj" class="article-share-link">Share</a>
       
       
     </footer>

@@ -258,13 +258,16 @@
     opacity: 0;
   }
 }
-#header{
-  box-shadow: 0 0 100px 55px #000;
+@media screen and (min-width:1261px){
+  #header{
+  box-shadow: 0 0 100px 55px #000 !important;
   transition: 1s;
+}
 }
 @media screen and (max-width:1260px){
   #header{
-  box-shadow: none;
+  box-shadow: 0 0 100px 55px #000;
+  transition: 1s;
 }
 }
  @media screen and (max-width:768px){
