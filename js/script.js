@@ -265,4 +265,8 @@ $('.outer').fadeIn(2000,"linear",function(){
 $('#footer').fadeIn(2000);
 });
 
+$('#daodream-launcher').on('click',function(){
+  $('.daodream-launcher-button.daodream-launcher-maximized.daodream-launcher-with-initials').click();
+})
+
 console.log("\n %c 相互交流学习一下😀 %c QQ:%c910069730 \n","color: orange; background: #112233; padding:5px 0;text-shadow: 0px 0px 2px yellow;","background: #334455; padding:5px 0;color:#fff;text-shadow: 0px 0px 2px #fff;","background: #334455; padding:5px 0;color:rgb(11,234,235);text-shadow: 0px 0px 5px #258fb8;");
