@@ -168,6 +168,8 @@ $container.toggleClass('mobile-nav-on');
 $('#mobile-nav').css({display:"block",transition:"0.5s"});
 $('html,body,#wrap').css({transition:"0.5s"});
 $('#c_n7').stop().fadeOut();
+$('#c_n8').stop().fadeOut();
+$('#c_n9').stop().fadeOut();
 // $('#header').get(0).style.boxShadow="none";
 stopMobileNavAnim();
 });
@@ -177,6 +179,8 @@ if (isMobileNavAnim || !$container.hasClass('mobile-nav-on')) return;
 
 $container.removeClass('mobile-nav-on');
 $('#c_n7').stop().fadeIn();
+$('#c_n8').stop().fadeIn();
+$('#c_n9').stop().fadeIn();
 // $('#header').get(0).style.boxShadow="0 0 100px 55px #000";
 });
 
