@@ -98,6 +98,9 @@ figure.highlight{
   box-shadow: none !important;
   background: none !important;
   /* background: -webkit-radial-gradient(circle, rgba(255,255,255,.8), rgba(34,65,104, 0.9), rgba(255,255,255,.8)) !important; */
+  background: rgb(255, 255, 255);
+  box-shadow: 0 0 3px 3px  rgb(0,0,0) inset;
+  background: -webkit-radial-gradient(circle, rgba(255, 255, 255, 0.5), transparent, transparent) !important;
   /* box-shadow: 0 0 10px 10px rgba(83,119,133, 0.9) inset !important; */
   border-radius: 50% !important;
   /* opacity: .5 !important; */
@@ -516,7 +519,7 @@ figure.highlight{
   z-index: 999999999999999999999999999999 !important;
 }
 
-/* 流星雨特效(暂时关闭) */
+/* 流星雨特效 */
 :root{--primary-color:hsl(196, 78%, 61%);--secondary-color:hsl(217, 15%, 83%);--success-color:hsl(165, 58%, 55%);--info-color:hsl(214, 79%, 65%);--warning-color:hsl(43, 100%, 66%);--danger-color:hsl(354, 81%, 63%);--primary-color-darker:hsl(196, 68%, 54%);--secondary-color-darker:hsl(215, 13%, 70%);--success-color-darker:hsl(165, 55%, 48%);--info-color-darker:hsl(214, 68%, 58%);--warning-color-darker:hsl(39, 97%, 62%);--danger-color-darker:hsl(354, 67%, 56%);--primary-color-lighter:hsl(196, 78%, 81%);--secondary-color-lighter:hsl(214, 16%, 92%);--success-color-lighter:hsl(165, 58%, 75%);--info-color-lighter:hsl(214, 79%, 85%);--warning-color-lighter:hsl(43, 100%, 86%);--danger-color-lighter:hsl(354, 81%, 83%);--secondary-color-darkest:hsl(215, 11%, 30%);--secondary-color-lightest:hsl(220, 1%, 98%)}
 
 .starsBox {
@@ -905,6 +908,83 @@ figure.highlight{
     opacity: 0.6;
   }
 }
+
+
+/* 波浪动画效果 */
+.waterBox{
+	text-align: center;
+  overflow: hidden;
+  position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 50%;
+    margin-left: -150px;
+    top: -47px;
+  background: -webkit-radial-gradient(circle, rgba(111, 111, 111, 0.3), transparent, transparent) !important;
+  border-radius: 50%;
+}
+ 	i{
+ 		width: 10%;
+        height: 10%;
+ 		border-radius: 50%;
+        animation: move 4s linear infinite;
+        position: absolute;
+        left: 45%;
+        top: 45%;
+        z-index: 0;
+ 	}
+ 	i:nth-child(2){
+ 		display: block;
+ 		width: 10%;
+        height: 10%;
+ 		position:  absolute;
+ 		left: 45%;
+        top: 45%;
+ 		border-radius: 50%;
+ 		 animation: move 4s linear 1s infinite;
+ 	}
+ 	 	i:nth-child(3){
+ 		display: block;
+ 	    width: 10%;
+        height: 10%;
+ 		position:  absolute;
+ 		left: 45%;
+        top: 45%;
+ 		border-radius: 50%;
+ 		 animation: move 4s linear 2s infinite;
+ 	}
+ 	 	i:nth-child(4){
+ 		display: block;
+ 	    width: 10%;
+        height: 10%;
+ 		position:  absolute;
+ 		left: 45%;
+        top: 45%;
+ 		border-radius: 50%;
+ 		 animation: move 4s linear 3s infinite;
+ 	}
+ 	@keyframes move{
+ 		from{
+            transform: scale(1);
+            opacity: 0.2;
+            filter: alpha(opacity=80);
+            /* background-color: rgba(255,255,255,.8);
+            background: rgba(34,65,104, 0.9);
+            background: rgba(21,49,86, 1);
+            background: rgba(33, 94, 148,.8);
+            background: rgba(33, 94, 148,.8); */
+            /* background: rgba(7, 97, 187, 1); */
+            /* background: rgba(3, 71, 138,1); */
+            box-shadow: 0 0 5px 5px rgba(60, 153, 245, 1) inset;
+            box-shadow: 0 0 5px 5px rgb(0, 115, 255) inset;
+
+ 		}
+ 		to{
+            transform: scale(8);
+            opacity: 0;
+            filter: alpha(opacity=0);
+ 		}
+ }
 </style>
 <body >
   <!-- <div class="get_all">
@@ -981,6 +1061,12 @@ figure.highlight{
   
   <div id="banner" ></div>
   <div id="header-outer" class="outer">
+    <div class="waterBox">
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+    </div>
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
         <meting-js
@@ -1062,7 +1148,7 @@ figure.highlight{
         
     </div>
     <footer class="article-footer">
-      <a data-url="https://910069730.github.io/tags/index.html" data-id="cke8drpr50002ywuy9dk53jbw" class="article-share-link">Share</a>
+      <a data-url="https://910069730.github.io/tags/index.html" data-id="cke8j58jt00004wuy172dgcx4" class="article-share-link">Share</a>
       
       
     </footer>
