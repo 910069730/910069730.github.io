@@ -163,9 +163,6 @@ body {
 #container {
   position: relative;
 }
-.mobile-nav-on {
-  overflow: hidden;
-}
 #wrap {
   height: 100%;
   width: 100%;
