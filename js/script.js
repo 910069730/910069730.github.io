@@ -1,7 +1,54 @@
 
 $(function(){
 
-// Share
+//页面整体生成
+$('.outer').fadeIn(2000,"linear",function(){
+  $('.starsBox').css({opacity:0.1});
+});
+$('#footer').fadeIn(2000);
+
+// 打赏监听
+$('#btn_donate').on('click',function(){
+  $('#donate_board').addClass('hidden');
+  $('#donate_guide').removeClass('hidden');
+});
+
+// Mobile nav(移动端侧边栏)
+var $container = $('#container'),
+isMobileNavAnim = false,
+mobileNavAnimDuration = 200;
+
+var startMobileNavAnim = function(){
+isMobileNavAnim = true;
+};
+
+var stopMobileNavAnim = function(){
+setTimeout(function(){
+  isMobileNavAnim = false;
+}, mobileNavAnimDuration);
+}
+
+$('#main-nav-toggle').on('click', function(){
+if (isMobileNavAnim) return;
+
+startMobileNavAnim();
+$container.toggleClass('mobile-nav-on');
+$('#mobile-nav').css({display:"block",transition:"0.5s"});
+$('html,body,#wrap').css({transition:"0.5s"});
+$('body > canvas').stop().fadeOut();
+$('#outer > canvas').stop().fadeOut();
+stopMobileNavAnim();
+});
+
+$('#wrap').on('click', function(){
+if (isMobileNavAnim || !$container.hasClass('mobile-nav-on')) return;
+
+$container.removeClass('mobile-nav-on');
+$('body > canvas').stop().fadeIn();
+$('#outer > canvas').stop().fadeIn();
+});
+
+// Share(分享)
 $('body').on('click', function(){
  $('.article-share-box.on').removeClass('on');
 }).on('click', '.article-share-link', function(e){
@@ -55,7 +102,7 @@ $('body').on('click', function(){
  window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
 });
 
-// Caption
+// Caption(图片说明)
 $('.article-entry').each(function(i){
  $(this).find('img').each(function(){
    if ($(this).parent().hasClass('fancybox')) return;
@@ -76,59 +123,14 @@ if ($.fancybox){
  $('.fancybox').fancybox();
 }
 
-// Mobile nav
-var $container = $('#container'),
-isMobileNavAnim = false,
-mobileNavAnimDuration = 200;
-
-var startMobileNavAnim = function(){
-isMobileNavAnim = true;
-};
-
-var stopMobileNavAnim = function(){
-setTimeout(function(){
-  isMobileNavAnim = false;
-}, mobileNavAnimDuration);
-}
-
-$('#main-nav-toggle').on('click', function(){
-if (isMobileNavAnim) return;
-
-startMobileNavAnim();
-$container.toggleClass('mobile-nav-on');
-$('#mobile-nav').css({display:"block",transition:"0.5s"});
-$('html,body,#wrap').css({transition:"0.5s"});
-$('body > canvas').stop().fadeOut();
-$('#outer > canvas').stop().fadeOut();
-stopMobileNavAnim();
-});
-
-$('#wrap').on('click', function(){
-if (isMobileNavAnim || !$container.hasClass('mobile-nav-on')) return;
-
-$container.removeClass('mobile-nav-on');
-$('body > canvas').stop().fadeIn();
-$('#outer > canvas').stop().fadeIn();
-});
-
-//返回顶部
-$(".returnTop").click(function(){
-
-  $("html,body").animate({scrollTop:0},1000,function(){
-    $(this).css({ boxShadow: "0 0 5px 5px #999", color:"#999",textShadow: "none"});
-  });
- 
-});
-
 //分类页事件监听
 $('.article-entry .category-list-item').on('click',function(){
   location.href="https://910069730.github.io"+$(this).find('a').attr('href');
 });
 
-//鼠标点击显示文字上浮效果
-/* 鼠标特效 */
-    var click_count=0;
-    $(document).click(function(e){ 
+//鼠标点击显示文字上浮特效 */
+var click_count=0;
+$(document).click(function(e){ 
         var text=new Array("HTML", "CSS", "JavaScript", "jQuery", "Bootstrap", "Swiper", "Animate" ,"PHP", "MYSQL", "NodeJS", "Vue", "React"); 
         var color=new Array(//颜色数组
             "#C01E22",
@@ -169,13 +171,14 @@ $('.article-entry .category-list-item').on('click',function(){
         $i.remove();//移除显示的文字
         });
         e.stopPropagation();//防止冒泡})
-    });
-
-//页面整体生成
-$('.outer').fadeIn(2000,"linear",function(){
-  $('.starsBox').css({opacity:0.1});
-});
-$('#footer').fadeIn(2000);
 });
 
+//TOP(返回顶部)
+$(".returnTop").click(function(){
+  $("html,body").animate({scrollTop:0},1000,function(){
+    $(this).css({ boxShadow: "0 0 5px 5px #999", color:"#999",textShadow: "none"});
+  });
+});
+
+});
 console.log("\n %c 相互交流学习一下😀 %c QQ:%c910069730 \n","color: orange; background: #112233; padding:5px 0;text-shadow: 0px 0px 2px yellow;","background: #334455; padding:5px 0;color:#fff;text-shadow: 0px 0px 2px #fff;","background: #334455; padding:5px 0;color:rgb(11,234,235);text-shadow: 0px 0px 5px #258fb8;");
