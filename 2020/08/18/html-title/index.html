@@ -1184,8 +1184,49 @@ figure.highlight{
       
       
     </div>
+    <!-- 添加打赏功能 只在文章详情中显示-->
+    
+      
+      <! -- 添加捐赠图标 -->
+<div class ="post-donate">
+    <div id="donate_board" class="donate_bar center">
+        <a id="btn_donate" class="btn_donate" href="javascript:;" title="打赏"></a>
+        <span class="donate_txt">
+           ↑<br>
+           欣赏此文？求鼓励，求支持！
+        </span>
+        <br>
+      </div>  
+    <div id="donate_guide" class="donate_bar center hidden" >
+        <!-- 方式一： 
+            ![](/img/Alipay.jpg)
+            ![](/img/WeChatpay.jpg)
+        -->
+        <!-- 方式二；
+            step1：在_config.yml中添加配置
+                Alipay: /img/Alipay.jpg
+                WeChatpay: /img/WeChatpay.jpg
+            step2：此处两张图片的路径分别设置为如下
+                <img src=""
+                <img src=""
+        -->
+        <!-- 支付宝打赏图案 -->
+        <img src="/css/images/imAlipay.jpg" alt="支付宝打赏">
+        <!-- 微信打赏图案 -->
+        <img src="/css/images/WeChatpay.jpg" alt="微信打赏">
+    </div>
+    <script type="text/javascript">
+        document.getElementById('btn_donate').onclick = function(){
+            $('#donate_board').addClass('hidden');
+            $('#donate_guide').removeClass('hidden');
+        }
+    </script>
+</div>
+<! -- 添加捐赠图标 -->
+      
+      
     <footer class="article-footer">
-      <a data-url="http://9ds824.coding-pages.com/2020/08/18/html-title/" data-id="cke9py9zl00080wuy2wo62btv" class="article-share-link">Share</a>
+      <a data-url="http://9ds824.coding-pages.com/2020/08/18/html-title/" data-id="cke9sb28l000rq4uy0afy5l7e" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%85%B3%E4%BA%8E%E9%A1%B5%E9%9D%A2title%E7%9A%84%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE/" rel="tag">关于页面title的字体设置</a></li></ul>
