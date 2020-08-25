@@ -42,6 +42,18 @@
   <script>(function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://widget.daovoice.io/widget/fe763ff8.js","daovoice");</script>
   <!-- --------- -->
 
+ <!-- 百度统计 -->
+ <script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?2b8ad5518c457dc7d6952523485b2bbc";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+  </script>
+  
+
   <!-- 访问量统计功能 -->
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
  
@@ -1181,7 +1193,7 @@ figure.highlight{
     <!-- 添加打赏功能 只在文章详情中显示-->
     
     <footer class="article-footer">
-      <a data-url="http://9ds824.coding-pages.com/tags/index.html" data-id="cke9sb2200000q4uyfve0b83g" class="article-share-link">Share</a>
+      <a data-url="http://9ds824.coding-pages.com/tags/index.html" data-id="ckea0rrup0000ocuy7guhe0ef" class="article-share-link">Share</a>
       
       
     </footer>
@@ -1356,9 +1368,8 @@ figure.highlight{
         TOP
       </div>
      
-      <div class="people_number">
-      <span id="busuanzi_container_site_uv" style='display:none'>本站总访客数 <span id="busuanzi_value_site_uv" style="font-weight: 700;"></span> 人</span>
-    </div>
+      <div class="people_number"><span id="busuanzi_container_site_uv" style='display:none'>本站总访客数 <span id="busuanzi_value_site_uv" style="font-weight: 700;"></span> 人</span></div>
+      <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
     </div>
   </div>
   <script type="text/javascript">
@@ -1369,7 +1380,6 @@ figure.highlight{
     
     _st('install','xX2WByXFnescu4MbaMwB','2.0.0');
   </script>
-
 </footer>
     </div>
     <nav id="mobile-nav">
@@ -1806,5 +1816,24 @@ $(function(){
         daovoice('update');
 });
 </script>
+
+<!-- 网站运行时间统计 -->
+<script>
+    var now = new Date(); 
+    function createtime() { 
+        var grt= new Date("08/15/2020 18:38:00");//在此处修改你的建站时间
+        now.setTime(now.getTime()+250); 
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+        document.getElementById("timeDate").innerHTML = "本站已运行 <b>"+dnum+"</b> 天 "; 
+        document.getElementById("times").innerHTML ="<b>"+ hnum + "</b> 小时 <b>" + mnum + "</b> 分 <b>" + snum + "</b> 秒"; 
+    } 
+  setInterval("createtime()",250);
+  </script>
+  
 </body>
 </html>
