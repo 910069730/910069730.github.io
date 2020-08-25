@@ -52,19 +52,20 @@
     s.parentNode.insertBefore(hm, s);
   })();
   </script>
-  
 
   <!-- 访问量统计功能 -->
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
  
-  <!-- 
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-   -->
   
 <link rel="stylesheet" href="/css/style.css">
 
 <meta name="generator" content="Hexo 5.0.2"></head>
 <style>
+  *,
+  *::before,
+  *::after{
+    -webkit-tap-highlight-color:transparent;
+  }
   html,body,#wrap{
     background: #000 !important;
     transition: none;
@@ -103,9 +104,6 @@ figure.highlight{
   background: transparent;
   border: none !important;
   box-shadow: none !important;
-  /* position: fixed;
-  left: 0;
-  top: 0; */
 }
 .aplayer-pic{
   background: none !important;
@@ -115,13 +113,10 @@ figure.highlight{
   height: 100% !important;
   box-shadow: none !important;
   background: none !important;
-  /* background: -webkit-radial-gradient(circle, rgba(255,255,255,.8), rgba(34,65,104, 0.9), rgba(255,255,255,.8)) !important; */
   background: rgb(255, 255, 255);
   box-shadow: 0 0 3px 3px  rgb(0,0,0) inset;
   background: -webkit-radial-gradient(circle, rgba(255, 255, 255, 0.5), transparent, transparent) !important;
-  /* box-shadow: 0 0 10px 10px rgba(83,119,133, 0.9) inset !important; */
   border-radius: 50% !important;
-  /* opacity: .5 !important; */
 }
 .aplayer-play{
   border: none !important;
@@ -130,13 +125,11 @@ figure.highlight{
 .aplayer-pause{
   border: none !important;
   right: 0 !important;
-  /* top: -1px !important; */
   bottom: 0 !important;
 }
 .aplayer-play path,.aplayer-pause path{
   fill:transparent !important;
   stroke:#fff !important;
-  /* stroke:rgba(255,255,255,.8) !important; */
 }
 .aplayer svg{
   width: 100% !important;
@@ -149,6 +142,7 @@ figure.highlight{
 .aplayer-play svg{
   top: 0 !important;
 }
+
 /* 头像 */
 #avatar{
   position: relative;
@@ -214,11 +208,6 @@ figure.highlight{
   src: local('Source Code Pro Regular'), local('SourceCodePro-Regular'), url(https://fonts.gstatic.com/s/sourcecodepro/v11/HI_SiYsKILxRpg3hIP6sJ7fM7PqlPevWnsUnxg.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-  *,
-  *::before,
-  *::after{
-    -webkit-tap-highlight-color:transparent;
-  }
   a.mobile-nav-link:hover{
     background-color: #999;
     color:#191919;
@@ -242,7 +231,6 @@ figure.highlight{
  }
  .returnTop{
   padding: 5px;
-  /* border: 1px solid #999; */
   border-radius: 30px;
   position: absolute;
   right: 0;
@@ -287,7 +275,6 @@ figure.highlight{
     top: -500%;
     opacity: 0.9;
     color: transparent;
-    /* box-shadow: 0 0 10px 10px rgba(255,255,255,.1); */
     z-index: -1;
     animation: star 2s  ease-in infinite ;
 }
@@ -302,21 +289,7 @@ figure.highlight{
     opacity: 0;
   }
 }
-  /* #header{
-  box-shadow: 0 0 100px 55px #000;
-  transition: 1s;
-}
-@media screen and (min-width:1260px){
-  #header{
-  box-shadow: 0 0 100px 55px #000 !important;
-  transition: 1s;
-}
-} */
 
-/* 图片点击放大样式 */
-/* .fancybox-wrap{
-  width: 80%;
-} */
 /* 搜索功能样式 */
 .st-ui-fallback{
   width: 90% !important;
@@ -327,7 +300,6 @@ figure.highlight{
 #search-form-box{
   box-sizing: border-box;
  position: absolute;
- /* width: 100%; */
  height: 30px;
  overflow: hidden;
  top: 15px;
@@ -335,7 +307,6 @@ figure.highlight{
  opacity: 1;
  display: none;
  background: #fff;
- /* padding: 5px 15px; */
  border-radius: 15px;
  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.3);
  box-shadow: 0 0 10px rgba(0,0,0,0.3);
@@ -348,14 +319,6 @@ figure.highlight{
     width: 100%;
     font: 13px -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     outline: none;
-}
-.search-form-input{
-  /* position: absolute !important; */
-  /* top: 15px !important; */
-  /* right: 0 !important; */
-  /* border-radius: 15px !important; */
- /* width: 0; */
- /* padding:0; */
 }
 .search-form {
     position: absolute;
@@ -462,10 +425,6 @@ figure.highlight{
 #get_all:hover{
   opacity: 1;
 }
-/* #header{
-  box-shadow: 0 0 100px 55px #000;
-} */
-
 
 /* 在线聊天样式 */
 #daodream-launcher{
@@ -496,9 +455,6 @@ figure.highlight{
   transition: .5s;
   position: absolute !important;
   right:-65px !important;
-  opacity: 1 !important;
-  /* display: none !important; */
-  /* z-index: 9999; */
   opacity: .5 !important;
 }
 #daodream-launcher:hover .daodream-launcher-button{
@@ -514,7 +470,6 @@ figure.highlight{
 }
 #daodream-launcher .daodream-launcher-button{
   display: block !important;
-  /* right:6px !important; */
   padding-right: 10px;
   left: -4px !important;
   background-color: transparent !important;
@@ -562,7 +517,6 @@ figure.highlight{
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  /* background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%); */
   overflow: hidden;
   z-index: -1;
   opacity: 0;
@@ -1003,13 +957,6 @@ figure.highlight{
             transform: scale(1);
             opacity: 0.2;
             filter: alpha(opacity=80);
-            /* background-color: rgba(255,255,255,.8);
-            background: rgba(34,65,104, 0.9);
-            background: rgba(21,49,86, 1);
-            background: rgba(33, 94, 148,.8);
-            background: rgba(33, 94, 148,.8); */
-            /* background: rgba(7, 97, 187, 1); */
-            /* background: rgba(3, 71, 138,1); */
             box-shadow: 0 0 5px 5px rgba(60, 153, 245, 1) inset;
             box-shadow: 0 0 5px 5px rgb(0, 115, 255) inset;
 
@@ -1022,10 +969,6 @@ figure.highlight{
  }
 </style>
 <body >
-  <!-- <div class="get_all">
-    <div id="get_all" style="font-weight: 700;">∨</div>
-  </div> -->
-  <!-- <div id="stars" style="width: 100%;height: 100%;position: fixed;left: 0; top: 0; background: rgba(255,255,255,.5);z-index: 1;overflow: hidden;"></div> -->
   <div id="container" >
     <div id="wrap" >
       <header id="header" style="border-bottom:none;z-index: 99999999;">
@@ -1085,16 +1028,6 @@ figure.highlight{
       <div class="star"></div>
     </div>
   </div>
-  <!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=27570917&auto=1&height=66"></iframe> -->
- 
-  <!-- <div>
-     {% if theme.background_music %}
-     <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=210  height="110" src="{{theme.background_music}}"></iframe>
-     {% endif %}
-  </div>
-  {% set cc={'by': 1, 'by-nc':1, 'by-nc-nd':1,'by-nc-sa':1,''by-nd':1,'by-sa':1,'zero':1} %}
-  {% if theme.creative_commons in cc %} -->
-  <!-- https://music.163.com/#/discover/toplist?id=3778678 -->
   
   <div id="banner" ></div>
   <div id="header-outer" class="outer">
@@ -1136,9 +1069,7 @@ figure.highlight{
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed" ></a>
         
-        <!-- <a id="nav-search-btn" class="nav-icon" title="Search" style="display: none;"></a> -->
-        <!-- <a id="nav-search-btn" class="nav-icon" title="Search"></a> -->
-        <!-- <a id="nav-search-btn" class="nav-icon" title="Search"></a> -->
+
         
           <a id="nav-search-btn"  href="#" title="Search" class="nav-icon st-search-show-outputs"></a>
         
@@ -1150,9 +1081,6 @@ figure.highlight{
         </div>
       </nav>
  
-      <!-- <div id="search-form-wrap">
-        <form action="http://www.baidu.com/s" method="get" accept-charset="UTF-8" target="_blank" class="search-form"><input type="search" name="q1" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="q6" value="9ds824.coding-pages.com"></form>
-      </div> -->
     </div>
   </div>
 </header>
@@ -1194,7 +1122,7 @@ figure.highlight{
     <!-- 添加打赏功能 只在文章详情中显示-->
     
     <footer class="article-footer">
-      <a data-url="http://9ds824.coding-pages.com/categories/index.html" data-id="ckea0rrwk0002ocuyblqoger5" class="article-share-link">Share</a>
+      <a data-url="http://9ds824.coding-pages.com/categories/index.html" data-id="ckea282a600004ouy1fiuenzq" class="article-share-link">Share</a>
       
       
     </footer>
@@ -1209,7 +1137,6 @@ figure.highlight{
           <aside id="sidebar">
   <div class="widget-wrap" style="padding: 10px;border: 5px solid #ddd;border-radius: 3px;border-radius: 3px;box-shadow: 0 -1px 4px #ccc inset;">
     <div style="font-size: 6rem;text-align: center;" id="avatar">
-      <!-- <img src="https://910069730.github.io/favicon.png" alt="" class="avatar"  style="width: 60%;padding: 0 20%;margin-bottom: 15px;border-radius: 26%;"> -->
       <span>👦</span>
     </div>
     <h3 class="widget-title" style="text-align: center;color: #000;font-weight: 700;margin-bottom: 20px;text-transform:none;">Nigel</h3>
@@ -1396,7 +1323,6 @@ figure.highlight{
 </nav>
     
 
-<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> -->
 
 <script src="/js/jquery.min.js"></script>
 
@@ -1418,18 +1344,11 @@ figure.highlight{
 
   </div>
 
-
-
   <!-- 页面鼠标移动线条特效 -->
   <script type="text/javascript">
-  /**
- * Copyright (c) 2016 hustcc
- * License: MIT
- * Version: v1.0.1
- * GitHub: https://github.com/hustcc/canvas-nest.js
-**/
 !function(){function n(n,e,t){return n.getAttribute(e)||t}function e(n){return document.getElementsByTagName(n)}function t(){var t=e("script"),o=t.length,i=t[o-1];return{l:o,z:n(i,"zIndex",-1),o:n(i,"opacity",.5),c:n(i,"color","0,0,0"),n:n(i,"count",99)}}function o(){a=m.width=window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth,c=m.height=window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight}function i(){r.clearRect(0,0,a,c);var n,e,t,o,m,l;s.forEach(function(i,x){for(i.x+=i.xa,i.y+=i.ya,i.xa*=i.x>a||i.x<0?-1:1,i.ya*=i.y>c||i.y<0?-1:1,r.fillRect(i.x-.5,i.y-.5,1,1),e=x+1;e<u.length;e++)n=u[e],null!==n.x&&null!==n.y&&(o=i.x-n.x,m=i.y-n.y,l=o*o+m*m,l<n.max&&(n===y&&l>=n.max/2&&(i.x-=.03*o,i.y-=.03*m),t=(n.max-l)/n.max,r.beginPath(),r.lineWidth=t/2,r.strokeStyle="rgba("+d.c+","+(t+.2)+")",r.moveTo(i.x,i.y),r.lineTo(n.x,n.y),r.stroke()))}),x(i)}var a,c,u,m=document.createElement("canvas"),d=t(),l="c_n"+d.l,r=m.getContext("2d"),x=window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||function(n){window.setTimeout(n,1e3/45)},w=Math.random,y={x:null,y:null,max:2e4};m.id=l,m.style.cssText="position:fixed;top:0;left:0;z-index:"+d.z+";opacity:"+d.o,e("body")[0].appendChild(m),o(),window.onresize=o,window.onmousemove=function(n){n=n||window.event,y.x=n.clientX,y.y=n.clientY},window.onmouseout=function(){y.x=null,y.y=null};for(var s=[],f=0;d.n>f;f++){var h=w()*a,g=w()*c,v=2*w()-1,p=2*w()-1;s.push({x:h,y:g,xa:v,ya:p,max:6e3})}u=s.concat([y]),setTimeout(function(){i()},100)}();
   </script>　
+
 <script>
 !function(){
  
@@ -1500,18 +1419,6 @@ figure.highlight{
  },
   
  w=Math.random,y={x:null,y:null,max:2e4};m.id=l,m.style.cssText="width:100%;position:fixed;top:0;right:0;z-index:0;opacity:"+d.o,$('#outer').append(m),o(),window.onresize=o;
-  
-//  window.onmousemove=function(n){
-  
-//  n=n||window.event,y.x=n.clientX,y.y=n.clientY
-  
-//  },
-  
-//  window.onmouseout=function(){
-  
-//  y.x=null,y.y=null
-  
-//  };
   
  for(var s=[],f=0;d.n>f;f++){
   
