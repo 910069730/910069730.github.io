@@ -95,20 +95,6 @@
   </url>
   
   <url>
-    <loc>http://9ds824.coding-pages.com/tags/hexo/</loc>
-    <lastmod>2020-08-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://9ds824.coding-pages.com/tags/hexo%E6%90%AD%E5%BB%BA/</loc>
-    <lastmod>2020-08-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://9ds824.coding-pages.com/tags/%E5%85%B3%E4%BA%8E%E9%A1%B5%E9%9D%A2title%E7%9A%84%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE/</loc>
     <lastmod>2020-08-27</lastmod>
     <changefreq>daily</changefreq>
@@ -116,7 +102,21 @@
   </url>
   
   <url>
+    <loc>http://9ds824.coding-pages.com/tags/hexo/</loc>
+    <lastmod>2020-08-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://9ds824.coding-pages.com/tags/jquery%E5%AE%9E%E7%8E%B0%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8/</loc>
+    <lastmod>2020-08-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://9ds824.coding-pages.com/tags/hexo%E6%90%AD%E5%BB%BA/</loc>
     <lastmod>2020-08-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

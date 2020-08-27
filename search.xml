@@ -68,6 +68,18 @@
       </tags>
   </entry>
   <entry>
+    <title>关于页面title的字体设置</title>
+    <url>/2020/08/18/html-title/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="html中的title标签字体设置说明如下："><a href="#html中的title标签字体设置说明如下：" class="headerlink" title="html中的title标签字体设置说明如下："></a>html中的title标签字体设置说明如下：</h2><p>html中的title标签字体是不能设置的，它是系统默认的字体，是唯一的，所以不能修改。</p>
+]]></content>
+      <categories>
+        <category>basic knowledge</category>
+      </categories>
+      <tags>
+        <tag>关于页面title的字体设置</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2020/08/15/hello-world/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -92,6 +104,20 @@
       </tags>
   </entry>
   <entry>
+    <title>jquery实现返回顶部功能</title>
+    <url>/2020/08/17/returnTop/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="功能代码如下："><a href="#功能代码如下：" class="headerlink" title="功能代码如下："></a>功能代码如下：</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</span><br><span class="line">    &lt;title&gt;&lt;/title&gt;</span><br><span class="line">    &lt;script src=&#x27;jquery-1.12.4.js&#x27;&gt;&lt;/script&gt;</span><br><span class="line">    &lt;style&gt;</span><br><span class="line">        body&#123;</span><br><span class="line">            min-height: 1000px;</span><br><span class="line">            background: skyblue;</span><br><span class="line">        &#125;</span><br><span class="line">        #dv&#123;</span><br><span class="line">            width: 40px;</span><br><span class="line">            height: 40px;</span><br><span class="line">            background-color: springgreen;</span><br><span class="line">            position: fixed;</span><br><span class="line">            right: 10px;</span><br><span class="line">            bottom: 10px;</span><br><span class="line">            cursor: pointer;</span><br><span class="line">        &#125;</span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div id=&quot;dv&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">  $(function()&#123;</span><br><span class="line">    $(&quot;#dv&quot;).click(function()&#123;</span><br><span class="line">        $(&quot;html,body&quot;).animate(&#123;scrollTop:0&#125;);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;);</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="简要分析："><a href="#简要分析：" class="headerlink" title="简要分析："></a>简要分析：</h2><p>首先要引入一个jQuery的js库，然后写入一个div并给予样式使其固定在了页面右下角，然后通过点击事件触发让页面返回顶部，当前通过动画函数的方式控制html和body,使其scrollTop为0即可。</p>
+]]></content>
+      <categories>
+        <category>jquery</category>
+      </categories>
+      <tags>
+        <tag>jquery实现返回顶部</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>搭建hexo方法</title>
     <url>/2020/08/15/hexo/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="步骤如下："><a href="#步骤如下：" class="headerlink" title="步骤如下："></a>步骤如下：</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">1、基于node</span><br><span class="line">2、npm包管理工具</span><br><span class="line">3、npm install -g hexo(hexo-cli)</span><br><span class="line">4、下载的资源是国外的可能比较慢</span><br><span class="line">5、淘宝镜像(代理的仓库)</span><br><span class="line">6、npm install -g hexo --registry=https://registry.npm.taobao.org</span><br><span class="line">7、在一个空目录（hexo init）博客系统的初始化</span><br><span class="line">8、hexo\source\_posts md文档就是博客文档</span><br><span class="line">9、如果要写一篇博客（新建文件   xxx.md）</span><br><span class="line">10、把md文档转html文件（hexo g）</span><br><span class="line">11、把自己的服务器预览（hexo s） localhost:4000</span><br><span class="line">12、如果从新生成html文件可能会有缓存（hexo clean,hexo g）</span><br></pre></td></tr></table></figure>
@@ -106,32 +132,6 @@
       </categories>
       <tags>
         <tag>hexo搭建</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于页面title的字体设置</title>
-    <url>/2020/08/18/html-title/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="html中的title标签字体设置说明如下："><a href="#html中的title标签字体设置说明如下：" class="headerlink" title="html中的title标签字体设置说明如下："></a>html中的title标签字体设置说明如下：</h2><p>html中的title标签字体是不能设置的，它是系统默认的字体，是唯一的，所以不能修改。</p>
-]]></content>
-      <categories>
-        <category>basic knowledge</category>
-      </categories>
-      <tags>
-        <tag>关于页面title的字体设置</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>jquery实现返回顶部功能</title>
-    <url>/2020/08/17/returnTop/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="功能代码如下："><a href="#功能代码如下：" class="headerlink" title="功能代码如下："></a>功能代码如下：</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</span><br><span class="line">    &lt;title&gt;&lt;/title&gt;</span><br><span class="line">    &lt;script src=&#x27;jquery-1.12.4.js&#x27;&gt;&lt;/script&gt;</span><br><span class="line">    &lt;style&gt;</span><br><span class="line">        body&#123;</span><br><span class="line">            min-height: 1000px;</span><br><span class="line">            background: skyblue;</span><br><span class="line">        &#125;</span><br><span class="line">        #dv&#123;</span><br><span class="line">            width: 40px;</span><br><span class="line">            height: 40px;</span><br><span class="line">            background-color: springgreen;</span><br><span class="line">            position: fixed;</span><br><span class="line">            right: 10px;</span><br><span class="line">            bottom: 10px;</span><br><span class="line">            cursor: pointer;</span><br><span class="line">        &#125;</span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div id=&quot;dv&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">  $(function()&#123;</span><br><span class="line">    $(&quot;#dv&quot;).click(function()&#123;</span><br><span class="line">        $(&quot;html,body&quot;).animate(&#123;scrollTop:0&#125;);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;);</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h2 id="简要分析："><a href="#简要分析：" class="headerlink" title="简要分析："></a>简要分析：</h2><p>首先要引入一个jQuery的js库，然后写入一个div并给予样式使其固定在了页面右下角，然后通过点击事件触发让页面返回顶部，当前通过动画函数的方式控制html和body,使其scrollTop为0即可。</p>
-]]></content>
-      <categories>
-        <category>jquery</category>
-      </categories>
-      <tags>
-        <tag>jquery实现返回顶部</tag>
       </tags>
   </entry>
 </search>
