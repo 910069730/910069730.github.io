@@ -1,21 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>jquery实现鼠标点击显示文字上浮效果</title>
-    <url>/2020/08/22/clickAnimate/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>##功能效果图如下</p>
-<p><img src="/2020/08/22/clickAnimate/clickAnimation.jpg"></p>
-<p>##功能代码如下：</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">        &lt;script src=&quot;jquery-3.1.0.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">        &lt;title&gt;&lt;/title&gt;</span><br><span class="line">        &lt;style&gt;</span><br><span class="line">            body&#123;</span><br><span class="line">                position: absolute;</span><br><span class="line">                width: 100%;</span><br><span class="line">                height: 100%;</span><br><span class="line">            &#125;</span><br><span class="line">        &lt;/style&gt;</span><br><span class="line">    &lt;/head&gt;</span><br><span class="line">    &lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">$(function()&#123;</span><br><span class="line"> //鼠标点击显示文字上浮效果</span><br><span class="line">    var click_count=0;</span><br><span class="line">    $(document).click(function(e)&#123; </span><br><span class="line">        var text=new Array(&quot;富强&quot;, &quot;民主&quot;, &quot;文明&quot;, &quot;和谐&quot;, &quot;自由&quot;, &quot;平等&quot;, &quot;公正&quot;, &quot;法治&quot;, &quot;爱国&quot;, &quot;敬业&quot;, &quot;诚信&quot;, &quot;友善&quot;); </span><br><span class="line">        // var text = str.split(&quot;,&quot;); </span><br><span class="line">        var color=new Array(//颜色数组</span><br><span class="line">            &quot;#C01E22&quot;,</span><br><span class="line">            &quot;#0088cc&quot;,</span><br><span class="line">            &quot;#FF5E52&quot;,</span><br><span class="line">            &quot;#2CDB87&quot;,</span><br><span class="line">            &quot;#00D6AC&quot;,</span><br><span class="line">            &quot;#EA84FF&quot;,</span><br><span class="line">            &quot;#FDAC5F&quot;,</span><br><span class="line">            &quot;#FD77B2&quot;,</span><br><span class="line">            &quot;#0DAAEA&quot;,</span><br><span class="line">            &quot;#C38CFF&quot;,</span><br><span class="line">            &quot;#FF926F&quot;,</span><br><span class="line">            &quot;#8AC78F&quot;,</span><br><span class="line">            &quot;#C7C183&quot;,</span><br><span class="line">            &quot;#9370DB&quot;,</span><br><span class="line">            &quot;#2f889a&quot;,</span><br><span class="line">            &quot;#9e5ae2&quot;);</span><br><span class="line">        var n=Math.floor(Math.random()*color.length+1)-1;</span><br><span class="line">        click_count=(click_count+1)%text.length;</span><br><span class="line">        var $i=$(&quot;&lt;span&gt;&quot;).text(text[click_count]);</span><br><span class="line">        var x=e.pageX,y=e.pageY;//鼠标点击坐标</span><br><span class="line">        $i.css(&#123;</span><br><span class="line">            &quot;position&quot;:&quot;absolute&quot;,</span><br><span class="line">            &quot;z-index&quot;:&quot;10000&quot;,</span><br><span class="line">            &quot;top&quot;:y-15,</span><br><span class="line">            &quot;left&quot;:x,</span><br><span class="line">            &quot;color&quot;:color[n],</span><br><span class="line">            &quot;font-size&quot;:&quot;14px&quot;,</span><br><span class="line">            &quot;font-weight&quot;:&quot;700&quot;,</span><br><span class="line">            &quot;cursor&quot;:&quot;default&quot;</span><br><span class="line">        &#125;);</span><br><span class="line">        $(&quot;body&quot;).append($i);</span><br><span class="line">        $i.animate(&#123;</span><br><span class="line">            &quot;top&quot;:y-180,//纵向偏移量</span><br><span class="line">            &quot;opacity&quot;:&quot;0&quot;&#125;,2000,function()&#123;</span><br><span class="line">        $i.remove();//移除显示的文字</span><br><span class="line">        &#125;);</span><br><span class="line">        e.stopPropagation();//防止冒泡&#125;)</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;);</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">    &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>jquery</category>
-      </categories>
-      <tags>
-        <tag>jquery实现鼠标点击显示文字上浮效果</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>关于图片格式</title>
     <url>/2020/08/16/aboutImages/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="/2020/08/16/aboutImages/smile.png"></p>
@@ -37,27 +22,18 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2020/08/15/hello-world/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <title>jquery实现鼠标点击显示文字上浮效果</title>
+    <url>/2020/08/22/clickAnimate/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>##功能效果图如下</p>
+<p><img src="/2020/08/22/clickAnimate/clickAnimation.jpg"></p>
+<p>##功能代码如下：</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">        &lt;script src=&quot;jquery-3.1.0.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">        &lt;title&gt;&lt;/title&gt;</span><br><span class="line">        &lt;style&gt;</span><br><span class="line">            body&#123;</span><br><span class="line">                position: absolute;</span><br><span class="line">                width: 100%;</span><br><span class="line">                height: 100%;</span><br><span class="line">            &#125;</span><br><span class="line">        &lt;/style&gt;</span><br><span class="line">    &lt;/head&gt;</span><br><span class="line">    &lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">$(function()&#123;</span><br><span class="line"> //鼠标点击显示文字上浮效果</span><br><span class="line">    var click_count=0;</span><br><span class="line">    $(document).click(function(e)&#123; </span><br><span class="line">        var text=new Array(&quot;富强&quot;, &quot;民主&quot;, &quot;文明&quot;, &quot;和谐&quot;, &quot;自由&quot;, &quot;平等&quot;, &quot;公正&quot;, &quot;法治&quot;, &quot;爱国&quot;, &quot;敬业&quot;, &quot;诚信&quot;, &quot;友善&quot;); </span><br><span class="line">        // var text = str.split(&quot;,&quot;); </span><br><span class="line">        var color=new Array(//颜色数组</span><br><span class="line">            &quot;#C01E22&quot;,</span><br><span class="line">            &quot;#0088cc&quot;,</span><br><span class="line">            &quot;#FF5E52&quot;,</span><br><span class="line">            &quot;#2CDB87&quot;,</span><br><span class="line">            &quot;#00D6AC&quot;,</span><br><span class="line">            &quot;#EA84FF&quot;,</span><br><span class="line">            &quot;#FDAC5F&quot;,</span><br><span class="line">            &quot;#FD77B2&quot;,</span><br><span class="line">            &quot;#0DAAEA&quot;,</span><br><span class="line">            &quot;#C38CFF&quot;,</span><br><span class="line">            &quot;#FF926F&quot;,</span><br><span class="line">            &quot;#8AC78F&quot;,</span><br><span class="line">            &quot;#C7C183&quot;,</span><br><span class="line">            &quot;#9370DB&quot;,</span><br><span class="line">            &quot;#2f889a&quot;,</span><br><span class="line">            &quot;#9e5ae2&quot;);</span><br><span class="line">        var n=Math.floor(Math.random()*color.length+1)-1;</span><br><span class="line">        click_count=(click_count+1)%text.length;</span><br><span class="line">        var $i=$(&quot;&lt;span&gt;&quot;).text(text[click_count]);</span><br><span class="line">        var x=e.pageX,y=e.pageY;//鼠标点击坐标</span><br><span class="line">        $i.css(&#123;</span><br><span class="line">            &quot;position&quot;:&quot;absolute&quot;,</span><br><span class="line">            &quot;z-index&quot;:&quot;10000&quot;,</span><br><span class="line">            &quot;top&quot;:y-15,</span><br><span class="line">            &quot;left&quot;:x,</span><br><span class="line">            &quot;color&quot;:color[n],</span><br><span class="line">            &quot;font-size&quot;:&quot;14px&quot;,</span><br><span class="line">            &quot;font-weight&quot;:&quot;700&quot;,</span><br><span class="line">            &quot;cursor&quot;:&quot;default&quot;</span><br><span class="line">        &#125;);</span><br><span class="line">        $(&quot;body&quot;).append($i);</span><br><span class="line">        $i.animate(&#123;</span><br><span class="line">            &quot;top&quot;:y-180,//纵向偏移量</span><br><span class="line">            &quot;opacity&quot;:&quot;0&quot;&#125;,2000,function()&#123;</span><br><span class="line">        $i.remove();//移除显示的文字</span><br><span class="line">        &#125;);</span><br><span class="line">        e.stopPropagation();//防止冒泡&#125;)</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;);</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">    &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>hexo</category>
+        <category>jquery</category>
       </categories>
       <tags>
-        <tag>hexo</tag>
+        <tag>jquery实现鼠标点击显示文字上浮效果</tag>
       </tags>
   </entry>
   <entry>
@@ -92,15 +68,27 @@
       </tags>
   </entry>
   <entry>
-    <title>关于页面title的字体设置</title>
-    <url>/2020/08/18/html-title/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="html中的title标签字体设置说明如下："><a href="#html中的title标签字体设置说明如下：" class="headerlink" title="html中的title标签字体设置说明如下："></a>html中的title标签字体设置说明如下：</h2><p>html中的title标签字体是不能设置的，它是系统默认的字体，是唯一的，所以不能修改。</p>
+    <title>Hello World</title>
+    <url>/2020/08/15/hello-world/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
       <categories>
-        <category>basic knowledge</category>
+        <category>hexo</category>
       </categories>
       <tags>
-        <tag>关于页面title的字体设置</tag>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -132,6 +120,18 @@
       </categories>
       <tags>
         <tag>jquery实现返回顶部</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于页面title的字体设置</title>
+    <url>/2020/08/18/html-title/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="html中的title标签字体设置说明如下："><a href="#html中的title标签字体设置说明如下：" class="headerlink" title="html中的title标签字体设置说明如下："></a>html中的title标签字体设置说明如下：</h2><p>html中的title标签字体是不能设置的，它是系统默认的字体，是唯一的，所以不能修改。</p>
+]]></content>
+      <categories>
+        <category>basic knowledge</category>
+      </categories>
+      <tags>
+        <tag>关于页面title的字体设置</tag>
       </tags>
   </entry>
 </search>

@@ -74,13 +74,6 @@
 
   
   <url>
-    <loc>http://9ds824.coding-pages.com/tags/jquery%E5%AE%9E%E7%8E%B0%E9%BC%A0%E6%A0%87%E7%82%B9%E5%87%BB%E6%98%BE%E7%A4%BA%E6%96%87%E5%AD%97%E4%B8%8A%E6%B5%AE%E6%95%88%E6%9E%9C/</loc>
-    <lastmod>2020-08-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://9ds824.coding-pages.com/tags/image%E6%A0%BC%E5%BC%8F/</loc>
     <lastmod>2020-08-27</lastmod>
     <changefreq>daily</changefreq>
@@ -88,7 +81,7 @@
   </url>
   
   <url>
-    <loc>http://9ds824.coding-pages.com/tags/hexo/</loc>
+    <loc>http://9ds824.coding-pages.com/tags/jquery%E5%AE%9E%E7%8E%B0%E9%BC%A0%E6%A0%87%E7%82%B9%E5%87%BB%E6%98%BE%E7%A4%BA%E6%96%87%E5%AD%97%E4%B8%8A%E6%B5%AE%E6%95%88%E6%9E%9C/</loc>
     <lastmod>2020-08-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -102,7 +95,7 @@
   </url>
   
   <url>
-    <loc>http://9ds824.coding-pages.com/tags/%E5%85%B3%E4%BA%8E%E9%A1%B5%E9%9D%A2title%E7%9A%84%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE/</loc>
+    <loc>http://9ds824.coding-pages.com/tags/hexo/</loc>
     <lastmod>2020-08-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -122,14 +115,14 @@
     <priority>0.6</priority>
   </url>
   
-
-  
   <url>
-    <loc>http://9ds824.coding-pages.com/categories/jquery/</loc>
+    <loc>http://9ds824.coding-pages.com/tags/%E5%85%B3%E4%BA%8E%E9%A1%B5%E9%9D%A2title%E7%9A%84%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE/</loc>
     <lastmod>2020-08-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
+  
+
   
   <url>
     <loc>http://9ds824.coding-pages.com/categories/basic-knowledge/</loc>
@@ -139,7 +132,7 @@
   </url>
   
   <url>
-    <loc>http://9ds824.coding-pages.com/categories/hexo/</loc>
+    <loc>http://9ds824.coding-pages.com/categories/jquery/</loc>
     <lastmod>2020-08-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -147,6 +140,13 @@
   
   <url>
     <loc>http://9ds824.coding-pages.com/categories/gulp/</loc>
+    <lastmod>2020-08-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://9ds824.coding-pages.com/categories/hexo/</loc>
     <lastmod>2020-08-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
