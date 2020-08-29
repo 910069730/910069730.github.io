@@ -6,7 +6,7 @@
   <link href="http://9ds824.coding-pages.com/atom.xml" rel="self"/>
   
   <link href="http://9ds824.coding-pages.com/"/>
-  <updated>2020-08-26T09:54:58.742Z</updated>
+  <updated>2020-08-29T06:08:31.464Z</updated>
   <id>http://9ds824.coding-pages.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CDN加速合并引入多个相同域名js文件</title>
+    <link href="http://9ds824.coding-pages.com/2020/08/29/cdn-more-js/"/>
+    <id>http://9ds824.coding-pages.com/2020/08/29/cdn-more-js/</id>
+    <published>2020-08-29T05:52:28.159Z</published>
+    <updated>2020-08-29T06:08:31.464Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前导必备"><a href="#前导必备" class="headerlink" title="前导必备"></a>前导必备</h3><ul><li>这里演示使用的CDN是jsdelivr</li></ul><h2 id="未合并引入多个相同域名js文件的写法如下："><a href="#未合并引入多个相同域名js文件的写法如下：" class="headerlink" title="未合并引入多个相同域名js文件的写法如下："></a>未合并引入多个相同域名js文件的写法如下：</h2><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=&quot;https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script src=&quot;https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script src=&quot;https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure><h2 id="合并引入多个相同域名js文件的写法如下："><a href="#合并引入多个相同域名js文件的写法如下：" class="headerlink" title="合并引入多个相同域名js文件的写法如下："></a>合并引入多个相同域名js文件的写法如下：</h2><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=&quot;https://cdn.jsdelivr.net/combine/npm/jquery@1.12.4/dist/jquery.min.js,npm/aplayer/dist/APlayer.min.js,npm/meting@2/dist/Meting.min.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>当需要引入相同域名下多个js文件时，合并引入多个相同域名js文件可以减少网络连接次数，从而提升网站加载速度。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="CDN" scheme="http://9ds824.coding-pages.com/categories/CDN/"/>
+    
+    
+    <category term="性能优化-CDN加速合并引入多个相同域名js文件" scheme="http://9ds824.coding-pages.com/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96-CDN%E5%8A%A0%E9%80%9F%E5%90%88%E5%B9%B6%E5%BC%95%E5%85%A5%E5%A4%9A%E4%B8%AA%E7%9B%B8%E5%90%8C%E5%9F%9F%E5%90%8Djs%E6%96%87%E4%BB%B6/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo博客使用gulp压缩静态资源</title>
