@@ -1,25 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>CDN加速合并引入多个相同域名js文件</title>
-    <url>/2020/08/29/cdn-more-js/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前导必备"><a href="#前导必备" class="headerlink" title="前导必备"></a>前导必备</h3><ul>
-<li>这里演示使用的CDN是jsdelivr</li>
-</ul>
-<h2 id="未合并引入多个相同域名js文件的写法如下："><a href="#未合并引入多个相同域名js文件的写法如下：" class="headerlink" title="未合并引入多个相同域名js文件的写法如下："></a>未合并引入多个相同域名js文件的写法如下：</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&lt;script src=&quot;https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script src=&quot;https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script src=&quot;https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-
-<h2 id="合并引入多个相同域名js文件的写法如下："><a href="#合并引入多个相同域名js文件的写法如下：" class="headerlink" title="合并引入多个相同域名js文件的写法如下："></a>合并引入多个相同域名js文件的写法如下：</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&lt;script src=&quot;https://cdn.jsdelivr.net/combine/npm/jquery@1.12.4/dist/jquery.min.js,npm/aplayer/dist/APlayer.min.js,npm/meting@2/dist/Meting.min.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>当需要引入相同域名下多个js文件时，合并引入多个相同域名js文件可以减少网络连接次数，从而提升网站加载速度。</p>
-]]></content>
-      <categories>
-        <category>CDN</category>
-      </categories>
-      <tags>
-        <tag>性能优化-CDN加速合并引入多个相同域名js文件</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>关于图片格式</title>
     <url>/2020/08/16/aboutImages/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="/2020/08/16/aboutImages/smile.png"></p>
@@ -56,6 +37,25 @@
       </tags>
   </entry>
   <entry>
+    <title>CDN加速合并引入多个相同域名js文件</title>
+    <url>/2020/08/29/cdn-more-js/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前导必备"><a href="#前导必备" class="headerlink" title="前导必备"></a>前导必备</h3><ul>
+<li>这里演示使用的CDN是jsdelivr</li>
+</ul>
+<h2 id="未合并引入多个相同域名js文件的写法如下："><a href="#未合并引入多个相同域名js文件的写法如下：" class="headerlink" title="未合并引入多个相同域名js文件的写法如下："></a>未合并引入多个相同域名js文件的写法如下：</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&lt;script src=&quot;https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script src=&quot;https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script src=&quot;https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="合并引入多个相同域名js文件的写法如下："><a href="#合并引入多个相同域名js文件的写法如下：" class="headerlink" title="合并引入多个相同域名js文件的写法如下："></a>合并引入多个相同域名js文件的写法如下：</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&lt;script src=&quot;https://cdn.jsdelivr.net/combine/npm/jquery@1.12.4/dist/jquery.min.js,npm/aplayer/dist/APlayer.min.js,npm/meting@2/dist/Meting.min.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>当需要引入相同域名下多个js文件时，合并引入多个相同域名js文件可以减少网络连接次数，从而提升网站加载速度。</p>
+]]></content>
+      <categories>
+        <category>CDN</category>
+      </categories>
+      <tags>
+        <tag>性能优化-CDN加速合并引入多个相同域名js文件</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo博客使用gulp压缩静态资源</title>
     <url>/2020/08/26/gulp/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前导必备"><a href="#前导必备" class="headerlink" title="前导必备"></a>前导必备</h3><ul>
@@ -87,6 +87,35 @@
       </tags>
   </entry>
   <entry>
+    <title>搭建hexo方法</title>
+    <url>/2020/08/15/hexo/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="步骤如下："><a href="#步骤如下：" class="headerlink" title="步骤如下："></a>步骤如下：</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">1、基于node</span><br><span class="line">2、npm包管理工具</span><br><span class="line">3、npm install -g hexo(hexo-cli)</span><br><span class="line">4、下载的资源是国外的可能比较慢</span><br><span class="line">5、淘宝镜像(代理的仓库)</span><br><span class="line">6、npm install -g hexo --registry=https://registry.npm.taobao.org</span><br><span class="line">7、在一个空目录（hexo init）博客系统的初始化</span><br><span class="line">8、hexo\source\_posts md文档就是博客文档</span><br><span class="line">9、如果要写一篇博客（新建文件   xxx.md）</span><br><span class="line">10、把md文档转html文件（hexo g）</span><br><span class="line">11、把自己的服务器预览（hexo s） localhost:4000</span><br><span class="line">12、如果从新生成html文件可能会有缓存（hexo clean,hexo g）</span><br></pre></td></tr></table></figure>
+
+<h2 id="简化分析："><a href="#简化分析：" class="headerlink" title="简化分析："></a>简化分析：</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">1、首先要先安装好Node,然后同时也要有npm包管理工具</span><br><span class="line">2、然后在自己本地目录下创建一个hexo文件夹</span><br><span class="line">3、以管理员方式打开cmd然后切换到hexo文件夹所在目录下</span><br><span class="line">4、输入命令行：npm install hexo -g --registry=https://registry.npm.taobao.org</span><br><span class="line">5、然后输入命令行：hexo init</span><br><span class="line">6、再输入命令行：hexo g</span><br><span class="line">7、最后输入命令行：hexo s</span><br><span class="line">8、打开浏览器访问  localhost:4000  即可</span><br></pre></td></tr></table></figure>
+
+
+
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo搭建</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于页面title的字体设置</title>
+    <url>/2020/08/18/html-title/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="html中的title标签字体设置说明如下："><a href="#html中的title标签字体设置说明如下：" class="headerlink" title="html中的title标签字体设置说明如下："></a>html中的title标签字体设置说明如下：</h2><p>html中的title标签字体是不能设置的，它是系统默认的字体，是唯一的，所以不能修改。</p>
+]]></content>
+      <categories>
+        <category>basic knowledge</category>
+      </categories>
+      <tags>
+        <tag>关于页面title的字体设置</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2020/08/15/hello-world/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -108,35 +137,6 @@
       </categories>
       <tags>
         <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于页面title的字体设置</title>
-    <url>/2020/08/18/html-title/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="html中的title标签字体设置说明如下："><a href="#html中的title标签字体设置说明如下：" class="headerlink" title="html中的title标签字体设置说明如下："></a>html中的title标签字体设置说明如下：</h2><p>html中的title标签字体是不能设置的，它是系统默认的字体，是唯一的，所以不能修改。</p>
-]]></content>
-      <categories>
-        <category>basic knowledge</category>
-      </categories>
-      <tags>
-        <tag>关于页面title的字体设置</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>搭建hexo方法</title>
-    <url>/2020/08/15/hexo/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="步骤如下："><a href="#步骤如下：" class="headerlink" title="步骤如下："></a>步骤如下：</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">1、基于node</span><br><span class="line">2、npm包管理工具</span><br><span class="line">3、npm install -g hexo(hexo-cli)</span><br><span class="line">4、下载的资源是国外的可能比较慢</span><br><span class="line">5、淘宝镜像(代理的仓库)</span><br><span class="line">6、npm install -g hexo --registry=https://registry.npm.taobao.org</span><br><span class="line">7、在一个空目录（hexo init）博客系统的初始化</span><br><span class="line">8、hexo\source\_posts md文档就是博客文档</span><br><span class="line">9、如果要写一篇博客（新建文件   xxx.md）</span><br><span class="line">10、把md文档转html文件（hexo g）</span><br><span class="line">11、把自己的服务器预览（hexo s） localhost:4000</span><br><span class="line">12、如果从新生成html文件可能会有缓存（hexo clean,hexo g）</span><br></pre></td></tr></table></figure>
-
-<h2 id="简化分析："><a href="#简化分析：" class="headerlink" title="简化分析："></a>简化分析：</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">1、首先要先安装好Node,然后同时也要有npm包管理工具</span><br><span class="line">2、然后在自己本地目录下创建一个hexo文件夹</span><br><span class="line">3、以管理员方式打开cmd然后切换到hexo文件夹所在目录下</span><br><span class="line">4、输入命令行：npm install hexo -g --registry=https://registry.npm.taobao.org</span><br><span class="line">5、然后输入命令行：hexo init</span><br><span class="line">6、再输入命令行：hexo g</span><br><span class="line">7、最后输入命令行：hexo s</span><br><span class="line">8、打开浏览器访问  localhost:4000  即可</span><br></pre></td></tr></table></figure>
-
-
-
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo搭建</tag>
       </tags>
   </entry>
   <entry>
