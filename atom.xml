@@ -6,7 +6,7 @@
   <link href="http://caekz.cn/atom.xml" rel="self"/>
   
   <link href="http://caekz.cn/"/>
-  <updated>2020-08-29T06:08:31.464Z</updated>
+  <updated>2020-08-31T15:49:39.255Z</updated>
   <id>http://caekz.cn/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo博客网站添加安全运行天数</title>
+    <link href="http://caekz.cn/2020/08/31/hexo-runningTime/"/>
+    <id>http://caekz.cn/2020/08/31/hexo-runningTime/</id>
+    <published>2020-08-31T15:32:31.011Z</published>
+    <updated>2020-08-31T15:49:39.255Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前导必备"><a href="#前导必备" class="headerlink" title="前导必备"></a>前导必备</h3><ul><li>博主使用的是 landscape 主题</li></ul><h2 id="实现功能步骤"><a href="#实现功能步骤" class="headerlink" title="实现功能步骤"></a>实现功能步骤</h2><p>在\themes\landscape\layout 文件下的layout.ejs页脚部分添加如下代码：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;span id=&quot;timeDate&quot;&gt;载入天数...&lt;/span&gt;&lt;span id=&quot;times&quot;&gt;载入时分秒...&lt;/span&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">        var now = new Date(); </span><br><span class="line">        function createtime() &#123; </span><br><span class="line">            var grt= new Date(&quot;07/08/2018 12:00:00&quot;);//此处修改你的建站时间或者网站上线时间 </span><br><span class="line">            now.setTime(now.getTime()+250); </span><br><span class="line">            days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); </span><br><span class="line">            hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); </span><br><span class="line">            if(String(hnum).length ==1 )&#123;hnum = &quot;0&quot; + hnum;&#125; minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); </span><br><span class="line">            mnum = Math.floor(minutes); if(String(mnum).length ==1 )&#123;mnum = &quot;0&quot; + mnum;&#125; </span><br><span class="line">            seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); </span><br><span class="line">            snum = Math.round(seconds); if(String(snum).length ==1 )&#123;snum = &quot;0&quot; + snum;&#125; </span><br><span class="line">            document.getElementById(&quot;timeDate&quot;).innerHTML = &quot;本站已安全运行 &quot;+dnum+&quot; 天 &quot;; </span><br><span class="line">            document.getElementById(&quot;times&quot;).innerHTML = hnum + &quot; 小时 &quot; + mnum + &quot; 分 &quot; + snum + &quot; 秒&quot;; </span><br><span class="line">        &#125; </span><br><span class="line">    setInterval(&quot;createtime()&quot;,250);</span><br><span class="line">    &lt;/script&gt;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="hexo" scheme="http://caekz.cn/categories/hexo/"/>
+    
+    
+    <category term="hexo博客网站添加安全运行天数" scheme="http://caekz.cn/tags/hexo%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E6%B7%BB%E5%8A%A0%E5%AE%89%E5%85%A8%E8%BF%90%E8%A1%8C%E5%A4%A9%E6%95%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>CDN加速合并引入多个相同域名js文件</title>
