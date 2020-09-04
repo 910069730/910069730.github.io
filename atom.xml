@@ -6,7 +6,7 @@
   <link href="http://caekz.cn/atom.xml" rel="self"/>
   
   <link href="http://caekz.cn/"/>
-  <updated>2020-08-31T15:49:39.255Z</updated>
+  <updated>2020-09-04T08:59:56.893Z</updated>
   <id>http://caekz.cn/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>NProgress插件实现Ajax加载进度条基本功能</title>
+    <link href="http://caekz.cn/2020/09/04/nprogress/"/>
+    <id>http://caekz.cn/2020/09/04/nprogress/</id>
+    <published>2020-09-04T08:47:08.308Z</published>
+    <updated>2020-09-04T08:59:56.893Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前导必备"><a href="#前导必备" class="headerlink" title="前导必备"></a>前导必备</h3><ul><li>该插件是基于jQuery的</li></ul><h2 id="首先需要引入代码如下："><a href="#首先需要引入代码如下：" class="headerlink" title="首先需要引入代码如下："></a>首先需要引入代码如下：</h2><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--引入nprogress的css样式库--&gt;</span><br><span class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;nprogress.css&quot;/&gt;</span><br><span class="line">&lt;!--引入jquery库--&gt;</span><br><span class="line">&lt;script src=&quot;assets/jquery/jquery.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;!--引入nprogress的js库--&gt;</span><br><span class="line">&lt;script src=&quot;assets/nprogress/nprogress.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure><h2 id="在页面底部添加功能代码如下："><a href="#在页面底部添加功能代码如下：" class="headerlink" title="在页面底部添加功能代码如下："></a>在页面底部添加功能代码如下：</h2><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">NProgress.configure(&#123; showSpinner: false &#125;);  //不显示右上角加载圆圈</span><br><span class="line">$(window).ajaxStart(function () &#123;</span><br><span class="line">    /*只要使用的ajax就会执行这个方法*/</span><br><span class="line">    /*开启进度条*/</span><br><span class="line">    NProgress.start();</span><br><span class="line">&#125;);</span><br><span class="line">$(window).ajaxComplete(function () &#123;</span><br><span class="line">    /*结束进度条*/</span><br><span class="line">    NProgress.done();</span><br><span class="line">&#125;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="NProgress" scheme="http://caekz.cn/categories/NProgress/"/>
+    
+    
+    <category term="NProgress插件实现Ajax加载进度条" scheme="http://caekz.cn/tags/NProgress%E6%8F%92%E4%BB%B6%E5%AE%9E%E7%8E%B0Ajax%E5%8A%A0%E8%BD%BD%E8%BF%9B%E5%BA%A6%E6%9D%A1/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo博客网站添加安全运行天数</title>

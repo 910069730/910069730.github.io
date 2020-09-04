@@ -1,1 +1,1 @@
-http://caekz.cn/2020/08/31/hexo-runningTime/
+http://caekz.cn/2020/09/04/nprogress/
