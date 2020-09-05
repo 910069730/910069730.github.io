@@ -1,25 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>CDN加速合并引入多个相同域名js文件</title>
-    <url>/2020/08/29/cdn-more-js/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前导必备"><a href="#前导必备" class="headerlink" title="前导必备"></a>前导必备</h3><ul>
-<li>这里演示使用的CDN是jsdelivr</li>
-</ul>
-<h2 id="未合并引入多个相同域名js文件的写法如下："><a href="#未合并引入多个相同域名js文件的写法如下：" class="headerlink" title="未合并引入多个相同域名js文件的写法如下："></a>未合并引入多个相同域名js文件的写法如下：</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&lt;script src=&quot;https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script src=&quot;https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script src=&quot;https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-
-<h2 id="合并引入多个相同域名js文件的写法如下："><a href="#合并引入多个相同域名js文件的写法如下：" class="headerlink" title="合并引入多个相同域名js文件的写法如下："></a>合并引入多个相同域名js文件的写法如下：</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&lt;script src=&quot;https://cdn.jsdelivr.net/combine/npm/jquery@1.12.4/dist/jquery.min.js,npm/aplayer/dist/APlayer.min.js,npm/meting@2/dist/Meting.min.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>当需要引入相同域名下多个js文件时，合并引入多个相同域名js文件可以减少网络连接次数，从而提升网站加载速度。</p>
-]]></content>
-      <categories>
-        <category>CDN</category>
-      </categories>
-      <tags>
-        <tag>性能优化-CDN加速合并引入多个相同域名js文件</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>关于图片格式</title>
     <url>/2020/08/16/aboutImages/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="/2020/08/16/aboutImages/smile.png"></p>
@@ -38,6 +19,25 @@
       </categories>
       <tags>
         <tag>image格式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CDN加速合并引入多个相同域名js文件</title>
+    <url>/2020/08/29/cdn-more-js/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前导必备"><a href="#前导必备" class="headerlink" title="前导必备"></a>前导必备</h3><ul>
+<li>这里演示使用的CDN是jsdelivr</li>
+</ul>
+<h2 id="未合并引入多个相同域名js文件的写法如下："><a href="#未合并引入多个相同域名js文件的写法如下：" class="headerlink" title="未合并引入多个相同域名js文件的写法如下："></a>未合并引入多个相同域名js文件的写法如下：</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&lt;script src=&quot;https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script src=&quot;https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script src=&quot;https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="合并引入多个相同域名js文件的写法如下："><a href="#合并引入多个相同域名js文件的写法如下：" class="headerlink" title="合并引入多个相同域名js文件的写法如下："></a>合并引入多个相同域名js文件的写法如下：</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&lt;script src=&quot;https://cdn.jsdelivr.net/combine/npm/jquery@1.12.4/dist/jquery.min.js,npm/aplayer/dist/APlayer.min.js,npm/meting@2/dist/Meting.min.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>当需要引入相同域名下多个js文件时，合并引入多个相同域名js文件可以减少网络连接次数，从而提升网站加载速度。</p>
+]]></content>
+      <categories>
+        <category>CDN</category>
+      </categories>
+      <tags>
+        <tag>性能优化-CDN加速合并引入多个相同域名js文件</tag>
       </tags>
   </entry>
   <entry>
