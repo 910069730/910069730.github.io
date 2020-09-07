@@ -1,0 +1,484 @@
+////////////////////////
+====  常用链接  ====
+////////////////////////
+前端TOP100
+https://old.awesomes.cn/rank
+---------------------------------
+HTML代码和小程序代码相互转换在线工具
+http://www.wanderyun.com/blog/wxmlto.html
+HTML代码转js字符串以及转反斜杠字符串以及转义符转换
+https://www.html.cn/tool/html2js/
+---------------------------------
+菜鸟工具(汇总)
+https://c.runoob.com/
+---------------------------------
+===收费CDN(七牛云)===
+https://www.qiniu.com/?utm_source=%E7%99%BE%E5%BA%A6%E5%93%81%E4%B8%93&utm_medium=CPM&utm_term=logo&utm_content=%E5%B7%A6%E4%BE%A7logo&utm_campaign=%E7%99%BE%E5%BA%A6%E5%93%81%E4%B8%93
+===开源CDN===
+（jsdelivr）
+https://www.jsdelivr.com/
+（bootcdn）
+https://www.bootcdn.cn/
+  (cdnjs)
+https://cdnjs.com/
+---------------------------------
+npm官网（可进行npm包搜索）
+https://www.npmjs.com/
+nodeJs下载
+https://nodejs.org/zh-cn/download/
+---------------------------------
+===网站上线会使用===
+亿网科技-域名交易平台(用于购买域名)
+https://www.edns.com/
+
+sitemap.xml 在线生成器
+https://www.xml-sitemaps.com/
+
+搜索上线说明以及各大搜索资源平台入口
+https://blog.csdn.net/u012259492/article/details/28908277
+
+百度搜索资源平台  (注意: 百度SEO检测需要有访问的页面超过32个)
+https://ziyuan.baidu.com/site/index#/
+百度统计
+https://tongji.baidu.com/web/welcome/basic
+百度网站安全检测
+https://anquan.baidu.com/product/secindex#/my-sites
+百度SEO优化工具
+https://su.baidu.com/console/index.html#/addsite/step1
+
+谷歌搜索引擎录入平台(需要谷歌访问助手或者翻墙)
+https://search.google.com/search-console
+谷歌搜索中心(需要谷歌访问助手或者翻墙)
+https://developers.google.com/search
+
+神马搜索站长平台
+https://zhanzhang.sm.cn/
+---------------------------------
+浏览器拦截跨域请求处理方法(已阻止跨源请求:同源策略禁止读取远程资源)
+https://www.cnblogs.com/go-jzg/p/4594723.html
+---------------------------------
+===UI库====
+
+bootstrap库（PC移动通用）（其中的js功能组件依赖jQuery）(推荐)
+https://www.bootcss.com/
+MUI （移动端）
+https://dev.dcloud.net.cn/mui/
+
+ElementUI（PC端）(推荐)
+https://element.eleme.cn/#/zh-CN/component/layout
+MintUI (移动端)(推荐)
+https://mint-ui.github.io/#!/zh-cn
+LayUI(PC端)
+https://www.layui.com/demo/
+VantUI(移动端)
+https://www.w3cschool.cn/vantlesson/vantlesson-9a6235v0.html
+
+antUI(reactUI组件库)(使用react一般会用该UI组件库)
+https://1x.ant.design/docs/react/introduce
+
+目前Vue几大流行框架陈述
+https://www.cnblogs.com/yuanjili666/p/11762090.html
+---------------------------------
+Animate.css（可结合jquery来使用，不是必须要jquery）
+https://www.dowebok.com/demo/2014/98/
+(简述使用Animate.css方法)
+https://www.dowebok.com/98.html 
+---------------------------------
+====jquery相关(兼容IE低版本推荐使用1.12.4)===
+jquery使用说明文档
+https://www.runoob.com/jquery/jquery-tutorial.html
+https://www.jquery123.com/
+~~~~~~~~
+Web前端开发资源库⭐⭐⭐
+https://www.awesomes.cn/
+jquery在线插件市场
+https://www.jq22.com/
+~~~~~~~~
+图片懒加载(jquery.lazyload.js)   (data-original~lazyload)
+https://www.cnblogs.com/zdz8207/p/js-lazyload.html
+全屏滚动功能(fullpage.js)
+http://fullpage.81hu.com/
+背景图视差滚动(Stellar.js)
+https://segmentfault.com/a/1190000002566463
+页面加载进度条(NProgress.js)
+https://www.helloweba.net/javascript/438.html
+颜色渐变动画(字体,背景,边框)(jquery.color.js)  (animate)
+https://blog.csdn.net/weixin_30847865/article/details/95475066
+文件上传插件(jquery.fileupload.js)
+https://www.jq22.com/jquery-info230
+表单校验插件(BootstrapValidator)  (需要jQuery和Bootstrap 3)
+https://www.jianshu.com/p/756b225d480d
+图片点击预览(jquery.swipebox.js)
+http://brutaldesign.github.io/swipebox/
+单个轮播图嵌套多个模块整体滚动效果
+https://amazingcarousel.com/examples/
+旋转木马轮播效果（2D）
+http://www.starplugins.com/killercarousel
+旋转木马轮播效果（3D）
+http://www.starplugins.com/bling3d/home
+书本翻页效果(turn.js)
+（效果展示）https://www.jq22.com/jquery-info2534
+https://www.cnblogs.com/cy1121/p/8260159.html
+~~~~~~~~~
+jqueryUI（由于UI比较丑，一般后端人员使用）
+https://www.runoob.com/jqueryui/jqueryui-tutorial.html
+40个推荐的jquery插件(里面包含上述部分的jquery插件)
+https://www.oschina.net/translate/40-jquery-plugins-to-improve-your-website?print
+---------------------------------
+swiper轮播图官网（不需要依赖jquery）
+https://www.swiper.com.cn/
+---------------------------------
+字体图标相关
+Fontawesome字体图标库(类名使用即可)
+https://fontawesome.dashgame.com/
+自定义字体图标库
+https://www.iconfont.cn/
+---------------------------------
+art-template模板引擎(开发用的是template-native的版本)
+http://aui.github.io/art-template/
+(jQuery模板引擎)jsrender
+https://www.jianshu.com/p/3151d2256410
+---------------------------------
+页面内滚动插件(iscroll.js)
+http://caibaojian.com/iscroll-5/versions.html
+ (简述使用方式) 
+https://www.cnblogs.com/moqiutao/p/4753971.html 
+---------------------------------
+JS-Cookie 插件（js.cookie.js）
+https://github.com/js-cookie/js-cookie
+---------------------------------
+消除了移动端浏览器上的物理点击和触发一个 click 事件之间的 300ms 的延迟(fastclick.js)
+https://www.bootcdn.cn/fastclick/
+(简述说明方式)
+https://www.cnblogs.com/cangqinglang/p/9948880.html
+---------------------------------
+图表插件库(canvas图表库)
+Chart.js
+https://www.chartjs.org/docs/latest/
+Echarts.js
+https://echarts.apache.org/examples/zh/index.html
+---------------------------------
+md5加密js库
+https://blog-static.cnblogs.com/files/7qin/md5.js
+---------------------------------
+ueditor富文本编辑器（文本域插件）
+https://github.com/fex-team/ueditor
+---------------------------------
+~~~兼容问题处理~~~
+解决JSON在IE6和IE7的兼容问题（json2.js）
+https://www.cnblogs.com/youring2/archive/2013/03/01/2938850.html
+---------------------------------
+常用对照表(HTTP Content-type、HTML转义字符对照表、ASCII对照表、HTTP状态码详解、颜色参考、网页字体参考等)
+https://tool.oschina.net/commons
+---------------------------------
+uni官方文档
+https://uniapp.dcloud.io/
+uni-ui组件效果展示
+https://hellouniapp.dcloud.net.cn/pages/component/view/view
+uni插件市场
+https://ext.dcloud.net.cn/
+
+基于 swiper 常见轮播图轮子大全（竖立卡片式 / 横向卡片式 / 带左右箭头 / 细条指示器）
+https://blog.csdn.net/weixin_44198965/article/details/107942721?utm_medium=distribute.pc_aggpage_search_result.none-task-blog-2~all~sobaiduend~default-1-107942721.nonecase&utm_term=swiper%E5%8D%A1%E7%89%87%E5%BC%8F%E8%BD%AE%E6%92%AD%E5%B1%9E%E6%80%A7&spm=1000.2123.3001.4430
+uniapp的map组件
+https://blog.csdn.net/weixin_45423757/article/details/108668892
+---------------------------------
+图片素材 1
+https://www.pexels.com/zh-cn/
+图片素材 2
+https://unsplash.com/
+icon小图片素材 (SVG或PNG)
+https://www.iconfinder.com/
+---------------------------------
+图片在线裁剪工具
+https://www.smartresize.com/zh-cn
+图片无损压缩 1
+https://tinypng.com/
+图片无损压缩 2
+https://www.picdiet.com/zh-cn
+视频在线裁剪压缩工具
+https://www.shipinyasuo.com/
+----------------------------------
+开源API接口平台
+
+漫小喵API
+http://www.brhsm.cn/
+KateAPI
+https://api.66mz8.com/
+小杰API
+https://xiaojieapi.cn/
+
+开源资讯接口
+https://unidemo.dcloud.net.cn/api/news
+网易云开源接口 1
+https://blog.51simple.com/4.html
+网易云开源接口 2 (https)
+https://autumnfish.cn/
+
+太平洋网络IP地址查询Web接口(需要跨域)（不推荐）
+http://whois.pconline.com.cn/
+天气接口平台
+https://dashboard.caiyunapp.com/user/sign_up/
+影视接口平台(不推荐)
+http://zhouxunwang.cn/api_a.php?id=62
+酷云资源接口平台（影视）（推荐）
+http://www.kuyunzyw.tv/
+http://www.kuyunzy.tv/help/#MaxCms
+
+豆瓣电影API接口
+https://www.jianshu.com/p/6e48425d2c63
+常用API接口汇总
+https://yq.aliyun.com/articles/642137?spm=a2c4e.11155472.0.0.7c341068a1lsMc
+====================
+   以下为开发常用工具
+====================
+谷歌常用拓展
+1、谷歌访问助手 2.3.0（前提）
+2、Google 翻译 2.0.9
+3、JSON Formatter 0.6.0
+4、Wappalyzer 6.5.19
+5、开发工具箱 2.3.0.5
+6、Vue.js devtools 5.3.3
+7、EditThisCookie 1.6.3
+---------------------------------
+.................................................................
+nodejs安装(一般带有npm)
+npm速度慢建议用淘宝镜像使用cnpm
+vue
+vue-cli
+http-server（本地服务）
+
+node        启动node服务
+nodemon 更新代码即时重启node服务
+hs -o -p xxx     开启本地服务(xxx为自定义的端口)(前提需要有安装http-server)
+.................................................................
+工具
+++++++++++++++++++++
+VScode (编辑器)
+常用拓展
+Debugger for Chrome
+Preview on Web Server （启动即时更新渲染本地服务页面）
+Chinese (Simplified) Language Pack for Visual Studio Code
+Easy LESS
+HTML Snippets （实现在使用vscode时，在.vue文件中使用html代码补全功能）
+Vetur
++++++++++++++++++++++
+Postman (数据请求响应测试工具)
++++++++++++++++++++++
+HBuilder X 2.9.7 (编辑器)
+插件安装
+App真机运行   (在安装新插件中)
+eslint-plugin-vue
+less编译
+scss/sass编译
+uni-app App调试   (在安装新插件中)
+uni-app编译   (在安装新插件中)
+内置浏览器   (在安装新插件中)
++++++++++++++++++++++
+微信web开发者工具 Stable v1.02.1911180(小程序开发工具)
++++++++++++++++++++++
+夜神模拟器(手机模拟器)
++++++++++++++++++++++
+MobaXterm_Personal_10.5.exe(远程连接工具)
++++++++++++++++++++++
+FSCapture(可取色以及截屏的小工具)
++++++++++++++++++++++
+PhotoShop（ps软件）
++++++++++++++++++++++
+Navicat Premium 15 (数据库可视化管理工具)(14天试用)
+下载网址: http://www.navicat.com.cn/download/navicat-premium
++++++++++++++++++++++
+TortoiseSVN
++++++++++++++++++++++
+TortoiseGit
++++++++++++++++++++++
+SourceTree（git可视化上传工具）
++++++++++++++++++++++
+
+
+。。。。。。。。。。。。。。。。。。
+===bootstrap===
+bootstrap常用类名
+https://www.cnblogs.com/sunxirui00/p/7580850.html
+。。。。。。。。。。。。。。。。。。
+===webpack===
+webpack新版本兼容问题系列 相关解决链接
+https://blog.csdn.net/sunqy1995/article/details/82193267
+https://developer.aliyun.com/ask/289455
+https://blog.csdn.net/weixin_38866493/article/details/89188890
+(配置webpack-dev-server)
+https://blog.csdn.net/weixin_43684713/article/details/92839419
+。。。。。。。。。。。。。。。。。。。。。。。
+===Vue===
+vue对比其他框架
+https://cn.vuejs.org/v2/guide/comparison.html
+~~~~~~~~~~~
+Vue中的computed属性和watch属性的区别
+https://www.cnblogs.com/gunelark/p/8492468.html
+vue.js数字有效长度16位_超出的解决办法
+https://www.cnblogs.com/wsm777/p/13796333.html
+~~~~~~~~~~~
+vue-resource的使用
+https://github.com/pagekit/vue-resource/blob/develop/docs/http.md
+~~~~~~~~~~~
+vuex的详解和使用
+https://www.cnblogs.com/mica/p/10757965.html
+~~~~~~~~~~~
+axios 中文文档 
+https://segmentfault.com/a/1190000008470355
+~~~~~~~~~~~
+---vue-cli---
+vue-cli（vue脚手架）超详细教程
+https://blog.csdn.net/wulala_hei/article/details/85000530
+vue的安装过程及注意事项
+https://blog.csdn.net/sunshine_mypg/article/details/80077029
+vue-cli打包后本地运行dist文件中的index.html
+https://blog.csdn.net/Heart_At_You/article/details/88074460
+vue本地打包build之后dist文件下的index.html不显示内容报错Failed to load resource
+https://segmentfault.com/a/1190000020419186
+在vue-cli项目中使用bootstrap的方法示例
+https://www.cnblogs.com/ysx215/p/10573625.html
+对Vue起初构建项目选项中 runtime-compiler 和 runtime-only 两种模式的理解
+https://blog.csdn.net/qq_40938301/article/details/104357910
+~~~~~~~~~~~
+element-ui菜单组件嵌套二层路由导致当前菜单高亮的问题
+https://blog.csdn.net/tj310/article/details/92244442
+element-ui 轮播图的使用
+https://www.jianshu.com/p/27a5e070ed07
+https://cloud.tencent.com/developer/section/1489905
+~~~~~~~~~~~
+mint-ui 组件使用文档
+https://mint-ui.github.io/docs/#/en2/header
+vue 使用mint-ui实现上拉加载和下拉刷新
+https://blog.csdn.net/huangxiaoguo1/article/details/80163585
+~~~~~~~~~~~
+MUI样式库
+https://www.dcloud.net.cn/hellomui/
+~~~~~~~~~~~
+Vue中正确使用jQuery的方法
+https://www.cnblogs.com/fps2tao/p/9565570.html
+vue中如何引入jquery详解
+https://blog.csdn.net/gang456789/article/details/80367717
+vue中使用bootstrap和jQuery
+https://www.cnblogs.com/aloneer/p/13419750.html
+vue-cli中使用jquery
+https://blog.csdn.net/qq_39588818/article/details/80483969
+~~~~~~~~~~~
+js日期时间处理类库
+http://momentjs.cn/
+~~~~~~~~~~~
+图片预览插件(vue-preview)
+https://github.com/Ls1231/vue-preview
+。。。。。。。。。。。。。。。。。。。。。
+====webpack中文文档===
+https://www.webpackjs.com/
+.。。。。。。。。。。。。。。。。。。。。。
+PM2 实现 自动重启 node 服务 （linux云服务器(ubuntu)）
+https://www.cnblogs.com/winyh/p/13209515.html
+。。。。。。。。。。。。。。。。。。。。。
+将Vue项目打包为Windows应用（.exe)
+https://zhuanlan.zhihu.com/p/59765568
+electron下载地址（手动下载zip压缩包）
+https://npm.taobao.org/mirrors/electron/
+webpack打包vue项目，资源路径如何从绝对路径改为相对路径
+https://www.cnblogs.com/LChenglong/p/10309501.html
+vue打包后图标路径不正确问题解决
+https://blog.csdn.net/xiao1215fei/article/details/90040438
+。。。。。。。。。。。。。。。。。。。。。
+Vue项目打包成APP
+https://blog.csdn.net/weixin_42215897/article/details/102855275?utm_medium=distribute.pc_relevant.none-task-blog-title-10&spm=1001.2101.3001.4242
+app的手机自带返回键功能修改（Vue）
+https://www.cnblogs.com/wangrong-0823/articles/12613807.html
+。。。。。。。。。。。。。。。。。。。。。
+微信小程序官方文档
+https://developers.weixin.qq.com/miniprogram/dev/framework/quickstart/
+微信小程序合法域名配置
+https://blog.csdn.net/u013910340/article/details/79925811
+。。。。。。。。。。。。。。。。。。。。。
+uniapp H5 seo 百度自动收录（html通用代码）
+https://blog.csdn.net/litengfei1/article/details/108912224?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param
+
+uniapp解决腾讯地图跨域问题
+https://www.awaits.cn/?p=186
+
+uni-app使用Jquery的方法
+https://blog.csdn.net/yytfjtyphoon/article/details/108715751
+
+uniapp 在h5和小程序上使用高德获取用户城市位置 
+https://www.cnblogs.com/ajanuw/p/13365054.html
+。。。。。。。。。。。。。。。。。。。。。
+TortoiseSVN (整体安装过程）
+https://www.runoob.com/svn/tortoisesvn-intro.html
+TortoiseSVN下载网址
+https://tortoisesvn.net/downloads.zh.html
+。。。。。。。。。。。。。。。。。。。。。
+TortoiseGit git ssh 配置 详细步骤 
+https://blog.csdn.net/ZYC88888/article/details/82349471
+TortoiseGit下载网址
+https://tortoisegit.org/download/
+SourceTree下载地址
+https://www.sourcetreeapp.com/
+SourceTree使用SSH克隆码云项目
+https://www.cnblogs.com/cloud-ken/p/9649005.html
+https://blog.csdn.net/qing666888/article/details/79513089
+git - 管理项目(SourceTree的使用)
+https://www.cnblogs.com/junhuawang/p/7054745.html
+github设置添加ssh
+https://www.cnblogs.com/tester-ggf/p/11962850.html
+使用git拉取github上的项目
+https://www.cnblogs.com/real-me/p/6528426.html
+。。。。。。。。。。。。。。。。。。。。。
+正则表达式
+https://c.runoob.com/front-end/854
+。。。。。。。。。。。。。。。。。。。。。
+MD5在线加密 - MD5加密工具 - MD5在线生成
+https://md5jiami.51240.com/
+md5在线解密破解,md5解密加密
+https://www.cmd5.com/
+。。。。。。。。。。。。。。。。。。。。。
+Unicode编码转换 - 站长工具
+http://tool.chinaz.com/Tools/Unicode.aspx
+。。。。。。。。。。。。。。。。。。。。。
+
+------------------------------------
+WEB前端开发-中文网(学习资源网站)
+https://www.html.cn/
+------------------------------------
+vue转型uni-app推荐首篇学习文档
+https://ask.dcloud.net.cn/article/35657
+------------------------------------
+flex语法篇 阮一峰
+http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
+flex实例篇 阮一峰
+http://www.ruanyifeng.com/blog/2015/07/flex-examples.html
+-------------------------------------
+es6教程 阮一峰
+https://es6.ruanyifeng.com/
+--------------------------------------
+js代码规范
+https://standardjs.com/readme-zhcn.html
+··············································································································································································
+推荐技术选用
+
+前端: jquery(js库)                            方便链式编程，以及其他插件的使用                                                           （偏PC端）(移动端可用zepto(js库)）    *
+        bootstrap(css和js)                  样式美观、响应式、一些现成且美观的js功能组件 (使用其js需要引入jquery)   （通用）                                             *
+        fullPage.js                              全屏滚动（适用于全屏滚动动画）(必须jquery引入才可使用)                         （偏PC端）                      
+        Stellar.js                                 背景图视察滚动效果 (必须jquery引入才可使用)                                           （偏PC端）
+        swiper                                    主要用于轮播图，也可以用于局部区域滚动窗口和固定侧边栏显示隐藏          （偏移动端）                                      *
+        font-awesome.min.css            字体图标样式库(直接给予标签相应的字体图标类名即可变成字体图标)           （通用）                                            *
+        artTemplate(template-native)  模板引擎(方便动态数据整齐有序有样式结构地输出)                                     （通用）                                            *
+        iscroll.js                                   目前最好用的页面内滚动插件（推荐)                                                         （通用）
+        NProgress.js                          进度条插件(在ajax请求阶段生效)                                                               （通用）     
+        jquery.lazyload.js                     图片懒加载（性能优化） (必须jquery引入才可使用)                                    （偏PC端）    
+        MUI                                        轻量、原生UI、移动端部分UI比较好用(移动端上拉刷新、下拉加载功能好)   （偏移动端）                         
+        Chart.js                                   用于图表绘制                                                                                           （通用）   （CSS3）
+        Animate.css                            用于CSS3动画效果                                                                                   （通用）   （CSS3）
+        
+后端:       优先用NodeJS(express框架)                      不需要搭建Apache、Nginx
+              其次用JAVA、PHP                需要搭建Apache、Nginx
+ 
+数据库:    MYSQL (关系型数据库)
+              MongoDB(非关系型数据库) 
+··············································································································································································
+百度统计数据（流量研究）
+https://tongji.baidu.com/research/site

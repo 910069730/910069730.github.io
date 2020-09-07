@@ -1,20 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>尘埃の客栈</title>
+  <title>陈鋆杰 - 博客</title>
   
   
   <link href="http://caekz.cn/atom.xml" rel="self"/>
   
   <link href="http://caekz.cn/"/>
-  <updated>2020-09-04T08:59:56.893Z</updated>
+  <updated>2020-10-17T17:34:14.665Z</updated>
   <id>http://caekz.cn/</id>
   
   <author>
-    <name>尘埃</name>
+    <name>陈鋆杰</name>
     
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>NodeJS结合MongoDB结合Vue进行前后端分离的数据请求</title>
+    <link href="http://caekz.cn/2020/10/17/nodejsAndMongodbAndVue/"/>
+    <id>http://caekz.cn/2020/10/17/nodejsAndMongodbAndVue/</id>
+    <published>2020-10-17T15:56:57.175Z</published>
+    <updated>2020-10-17T17:34:14.665Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="展示图如下："><a href="#展示图如下：" class="headerlink" title="展示图如下："></a>展示图如下：</h2><p><img src="//img.alicdn.com/imgextra/i1/2933956238/O1CN01ouPX5K1vx3HFB8Mnf_!!2933956238.gif" data-original="/2020/10/17/nodejsAndMongodbAndVue/nodejsImage.jpg"></p><h2 id="实现过程中需要有以下关键操作："><a href="#实现过程中需要有以下关键操作：" class="headerlink" title="实现过程中需要有以下关键操作："></a>实现过程中需要有以下关键操作：</h2><p>启动MongoDB数据库</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mongod</span><br></pre></td></tr></table></figure><p>启动NodeJS服务（当前服务配置代码在app.js）</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nodemon app.js</span><br></pre></td></tr></table></figure><p>通过webpack-dev-server启动Vue项目（在项目目录下进行执行命令行命令）</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run dev</span><br></pre></td></tr></table></figure><p>由于本地服务器端口不同，通过axios请求会存在跨域问题，可在nodeJS服务配置文件app.js中设置以下代码：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//设置跨域访问</span><br><span class="line">app.all(&#x27;*&#x27;, function(req, res, next) &#123;</span><br><span class="line">  res.header(&quot;Access-Control-Allow-Origin&quot;, &quot;*&quot;);</span><br><span class="line">  res.header(&quot;Access-Control-Allow-Headers&quot;, &quot;X-Requested-With&quot;);</span><br><span class="line">  res.header(&quot;Access-Control-Allow-Methods&quot;,&quot;PUT,POST,GET,DELETE,OPTIONS&quot;);</span><br><span class="line">  res.header(&quot;X-Powered-By&quot;,&#x27; 3.2.1&#x27;)</span><br><span class="line">  res.header(&quot;Content-Type&quot;, &quot;application/json;charset=utf-8&quot;);</span><br><span class="line">  next();</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="vue" scheme="http://caekz.cn/categories/vue/"/>
+    
+    
+    <category term="NodeJS结合MongoDB结合Vue" scheme="http://caekz.cn/tags/NodeJS%E7%BB%93%E5%90%88MongoDB%E7%BB%93%E5%90%88Vue/"/>
+    
+  </entry>
   
   <entry>
     <title>NProgress插件实现Ajax加载进度条基本功能</title>

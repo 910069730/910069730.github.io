@@ -56,30 +56,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2020/08/15/hello-world/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hexo博客使用gulp压缩静态资源</title>
     <url>/2020/08/26/gulp/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前导必备"><a href="#前导必备" class="headerlink" title="前导必备"></a>前导必备</h3><ul>
@@ -108,6 +84,30 @@
       </categories>
       <tags>
         <tag>性能优化-使用gulp压缩静态资源</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2020/08/15/hello-world/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -182,6 +182,33 @@
       </categories>
       <tags>
         <tag>jquery实现返回顶部</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>NodeJS结合MongoDB结合Vue进行前后端分离的数据请求</title>
+    <url>/2020/10/17/nodejsAndMongodbAndVue/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="展示图如下："><a href="#展示图如下：" class="headerlink" title="展示图如下："></a>展示图如下：</h2><p><img src="//img.alicdn.com/imgextra/i1/2933956238/O1CN01ouPX5K1vx3HFB8Mnf_!!2933956238.gif" data-original="/2020/10/17/nodejsAndMongodbAndVue/nodejsImage.jpg"></p>
+<h2 id="实现过程中需要有以下关键操作："><a href="#实现过程中需要有以下关键操作：" class="headerlink" title="实现过程中需要有以下关键操作："></a>实现过程中需要有以下关键操作：</h2><p>启动MongoDB数据库</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">mongod</span><br></pre></td></tr></table></figure>
+
+<p>启动NodeJS服务（当前服务配置代码在app.js）</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">nodemon app.js</span><br></pre></td></tr></table></figure>
+
+<p>通过webpack-dev-server启动Vue项目（在项目目录下进行执行命令行命令）</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">npm run dev</span><br></pre></td></tr></table></figure>
+
+<p>由于本地服务器端口不同，通过axios请求会存在跨域问题，可在nodeJS服务配置文件app.js中设置以下代码：</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">//设置跨域访问</span><br><span class="line">app.all(&#x27;*&#x27;, function(req, res, next) &#123;</span><br><span class="line">  res.header(&quot;Access-Control-Allow-Origin&quot;, &quot;*&quot;);</span><br><span class="line">  res.header(&quot;Access-Control-Allow-Headers&quot;, &quot;X-Requested-With&quot;);</span><br><span class="line">  res.header(&quot;Access-Control-Allow-Methods&quot;,&quot;PUT,POST,GET,DELETE,OPTIONS&quot;);</span><br><span class="line">  res.header(&quot;X-Powered-By&quot;,&#x27; 3.2.1&#x27;)</span><br><span class="line">  res.header(&quot;Content-Type&quot;, &quot;application/json;charset=utf-8&quot;);</span><br><span class="line">  next();</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+
+
+
+]]></content>
+      <categories>
+        <category>vue</category>
+      </categories>
+      <tags>
+        <tag>NodeJS结合MongoDB结合Vue</tag>
       </tags>
   </entry>
 </search>

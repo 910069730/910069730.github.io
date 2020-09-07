@@ -1,0 +1,88 @@
+==========================================================================
+启动mongodb数据库     mongod
+可另开cmd进行命令窗口操作查看数据   mongo  
+show dbs | db | use 数据库名称 | db.对象.find() | db.对象.insertOne() | show collections
+==========================================================================
+在操作前先npm init -y  ,
+然后可能用的需要进行安装    例如: express 、express-art-template 、mongoose、body-parser、bootstrap、 art-template 
+安装方式 npm i -S express
+==========================================================================
+mongodb数据库操作方法
+----------------------------------------------------------
+新增   save
+查询   find | findOne | findById
+删除   remove | findOneAndRemove | findByIdAndRemove
+更新   findByIdAndUpdate | update | findOneAndUpdate
+==========================================================================
+//用于数据库连接的js文件 （student.js）
+
+var mongoose = require('mongoose')
+
+mongoose.connect('mongodb://localhost/itcast', { useNewUrlParser: true, useUnifiedTopology: true} )
+
+var Schema = mongoose.Schema
+
+var studentSchema = new Schema({
+  name: {
+    type: String,
+    required: true   //不能为空
+  },
+  gender: {
+    type: Number,
+    enum: [0, 1],
+    default: 0
+  },
+  age: {
+    type: Number
+  },
+  hobbies: {
+    type: String
+  }
+})
+
+// 直接导出模型构造函数
+module.exports = mongoose.model('Student', studentSchema)
+
+============================================================================
+
+//用于路由的js文件 （router.js）
+
+var fs=require('fs')
+var express=require('express')
+const Student = require('./student')
+var router=express.Router()
+
+router.get('/index',function(req,res){
+    Student.find(function (err, students) {
+        if (err) {
+          return res.status(500).send('Server error.')
+        }
+        res.send(students)
+      })
+})
+
+//此处可加更多路由
+
+module.exports=router
+
+=============================================================================
+
+//nodejs入口js文件 （app.js）
+
+var fs = require('fs')
+var express = require('express')
+var router=require('./router')                                            //引入路由文件(内含数据库连接文件)
+var app=express();
+
+app.engine('html',require('express-art-template'))     //用于访问html页面
+
+app.use('/node_modules/', express.static('./node_modules/'))    //开启该目录访问权限
+app.use('/public/',express.static('./public/'))                               //开启该目录访问权限
+
+app.use(router)                                                                //挂载路由文件(内含数据库连接文件)
+
+app.listen(8745, function () {                                           //设置端口为8745
+    console.log('running 8745...')
+  })
+
+==============================================================================
