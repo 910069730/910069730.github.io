@@ -1,0 +1,449 @@
+.fwfhbr{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+.fwfhba{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.fwfhbf{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.fwcbr{
+    width: 100%;
+    min-height: 10px;
+    position: relative;
+    margin: 0 auto;
+}
+.fwcba{
+    width: 100%;
+    min-height: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.fwcbf{
+    width: 100%;
+    min-height: 10px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.fwcbaTop{
+    width: 100%;
+    min-height: 10px;
+    position: absolute;
+    left: 50%;
+    top:0;
+    transform: translateX(-50%);
+}
+.fwcbaBottom{
+    width: 100%;
+    min-height: 10px;
+    position: absolute;
+    left: 50%;
+    bottom:0;
+    transform: translateX(-50%);
+}
+.fwcbfTop{
+    width: 100%;
+    min-height: 10px;
+    position: fixed;
+    left: 50%;
+    top:0;
+    transform: translateX(-50%);
+}
+.fwcbfBottom{
+    width: 100%;
+    min-height: 10px;
+    position: fixed;
+    left: 50%;
+    bottom:0;
+    transform: translateX(-50%);
+}
+.ltba{
+    min-width: 10px;
+    min-height: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.ltbf{
+    min-width: 10px;
+    min-height: 10px;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+.ctba{
+    min-width: 10px;
+    min-height: 10px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+.ctbf{
+    min-width: 10px;
+    min-height: 10px;
+    position: fixed;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+.rtba{
+    min-width: 10px;
+    min-height: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.rtbf{
+    min-width: 10px;
+    min-height: 10px;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+.lcba{
+    min-width: 10px;
+    min-height: 10px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.lcbf{
+    min-width: 10px;
+    min-height: 10px;
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.ccba{
+    min-width: 10px;
+    min-height: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.ccbf{
+    min-width: 10px;
+    min-height: 10px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.rcba{
+    min-width: 10px;
+    min-height: 10px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.rcbf{
+    min-width: 10px;
+    min-height: 10px;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.lbba{
+    min-width: 10px;
+    min-height: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.lbbf{
+    min-width: 10px;
+    min-height: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+.cbba{
+    min-width: 10px;
+    min-height: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.cbbf{
+    min-width: 10px;
+    min-height: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.rbba{
+    min-width: 10px;
+    min-height: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.rbbf{
+    min-width: 10px;
+    min-height: 10px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.tinit{
+    font-size: calc(10px + 2vmin);
+    text-decoration: none;
+}
+.tcenter{
+    text-align: center;
+}
+.tleft{
+    text-align: left;
+}
+.tright{
+    text-align: right;
+}
+.tnowrap{
+    white-space: nowrap;
+}
+.tellipsis{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.tbold{
+    font-weight: 700;
+}
+.tunderline{
+    text-decoration: underline;
+}
+.iinit{
+    outline: none;
+    border:none;
+    border-radius: 0;
+    resize: none;
+    color: #000;
+}
+input.iinit::-webkit-input-placeholder{
+    color:#000;
+}
+.flexXcYc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flexXc{
+    display: flex;
+    justify-content: center;
+}
+.flexYc{
+    display: flex;
+    align-items: center;
+}
+.flexCol{
+    display: flex;
+    flex-direction: column;
+}
+.flexWrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex1{
+    flex: 1;
+}
+.flex2{
+    flex: 2;
+}
+.flex3{
+    flex: 3;
+}
+.flex4{
+    flex: 4;
+}
+.flex5{
+    flex: 5;
+}
+.flex6{
+    flex: 6;
+}
+.opacityZero{
+    opacity: 0;
+}
+.transition1{
+    transition: 1s;
+}
+.transition2{
+    transition: 2s;
+}
+.transition3{
+    transition: 3s;
+}
+.transition4{
+    transition: 4s;
+}
+.transition5{
+    transition: 5s;
+}
+.yAuto{
+    overflow-y: auto;
+}
+.xAuto{
+    overflow-x: auto;
+}
+.min320{
+    min-width: 320px;
+}
+.min400{
+    min-width: 400px;
+}
+.max320{
+    max-width: 320px;
+}
+.max400{
+    max-width: 400px;
+}
+.max300{
+    max-width: 300px;
+}
+#page1{
+    z-index: 999;
+}
+.circleBall{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(100%,rgb(11,234,235)));
+}
+.toGreyImg{
+    -webkit-filter: grayscale(100%); 
+}
+@media (prefers-reduced-motion: no-preference) {
+    .arotate {
+        transform-origin: center;
+        animation: animateRotate infinite 1s linear;
+    }
+    .amove{
+        transform-origin: center;
+        animation: amove infinite .3s linear;
+    }
+    .aHongBao1{
+        transform-origin: center;
+        animation: aHongBao1 4s ease infinite;
+    }
+    .aHongBao2{
+        transform-origin: center;
+        animation: aHongBao2 .8s ease infinite;
+        animation-fill-mode: forwards;
+    }
+    .aHongBao3{
+        transform-origin: center;
+        animation: aHongBao3 1s .52s linear infinite alternate;
+    }
+}
+@keyframes animateRotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes amove {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        transform: translate(2px, 2px);
+    }
+    80% {
+        transform: translate(2px, -2px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+@keyframes aHongBao1{
+    0% {
+      -webkit-transform: scale(1);
+      transform: scale(1);    
+    }
+    50% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    55% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    60% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    65% {
+      -webkit-transform: scale(1.15);
+      transform: scale(1.15);
+    }
+    70% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }  
+}
+@keyframes aHongBao2{
+    0% {
+      transform: rotateZ(5deg);    
+    }
+    20% {
+      transform: rotateZ(23deg);    
+    }
+    40% {
+      transform: rotateZ(-15deg);    
+    }
+    60% {
+        transform: rotateZ(7deg);    
+    }
+    80% {
+        transform: rotateZ(-5deg);    
+    }
+    100% {
+        transform: rotateZ(5deg);    
+    }
+}
+@keyframes aHongBao3{
+    from{
+        transform: scale(1.05);
+    }
+    to{
+        transform: scale(.95);
+    }
+}

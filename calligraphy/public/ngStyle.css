@@ -1,0 +1,14 @@
+input,
+select,
+button {
+    border-radius: 0;
+}
+.pageBox {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #F3F3F3;
+    overflow-y: auto;
+    left: 0;
+    top: 0;
+}
