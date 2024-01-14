@@ -1384,7 +1384,7 @@
                 // autoplay: {
                 //     delay: 2000, //2秒切换一次
                 // },
-                allowSlidePrev: false,
+                // allowSlidePrev: false,
                 initialSlide: 0,
                 slidesPerView: 'auto',
                 centeredSlides: !0,
@@ -1394,7 +1394,7 @@
                 keyboard: {
                     enabled: true,
                 },
-                allowSwipeToPrev : false,
+                // allowSwipeToPrev : false,
                 on: {
                     init:function(swiper){
                         // setTimeout(()=>{
@@ -1425,12 +1425,12 @@
                         });
                     },
                     slideChange: function () {
-                        if(this.activeIndex==49){
-                            this.allowSlidePrev=false;
-                        }
-                        else{
-                            this.allowSlidePrev=true;
-                        }
+                        // if(this.activeIndex==49){
+                        //     this.allowSlidePrev=false;
+                        // }
+                        // else{
+                        //     this.allowSlidePrev=true;
+                        // }
                         console.log(this.activeIndex)
                         if(soundSta){
                             $('#sceneMusicA').addClass('arotate')
